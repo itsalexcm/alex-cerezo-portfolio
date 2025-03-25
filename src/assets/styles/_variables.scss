@@ -1,0 +1,64 @@
+:root {
+	--background-color: #FFFFFF;
+	--background-color-rgb: 255, 255, 255;
+	// --background-image: none;
+	--header-color: #F5F5F5;
+	--text-color: #1F1F1F;
+	--social-color: #A0A0A0;
+	--selection-bg-color: #FFB75F;
+	--selection-color: #FFFFFF;
+	--zelda-color-01: #3FDC41;
+	--zelda-color-02: #FFB75F;
+	--zelda-color-03: #AC5A0A;
+	--nintendo-ui: #43D6DF;
+
+	--font-size-base: 16px;
+	--font-size-medium: 20px;
+	--font-size-large: 24px;
+	--font-size-larger: 28px;
+	--font-size-extralarge: 36px;
+	--font-size-hero: 48px;
+
+	--line-height-small: 24px;
+	--line-height-base: 28px;
+	--line-height-medium: 36px;
+	--line-height-mediumer: 40px;
+	--line-height-large: 48px;
+	--line-height-extralarge: 56px;
+	--line-height-hero: 72px;
+	
+	--spacing-base: 4px;
+	--spacing-1x: var(--spacing-base);
+	--spacing-2x: calc(var(--spacing-base) * 2);
+	--spacing-3x: calc(var(--spacing-base) * 3);
+	--spacing-4x: calc(var(--spacing-base) * 4);
+	--spacing-5x: calc(var(--spacing-base) * 5);
+	--spacing-6x: calc(var(--spacing-base) * 6);
+	--spacing-7x: calc(var(--spacing-base) * 7);
+	--spacing-8x: calc(var(--spacing-base) * 8);
+	--spacing-9x: calc(var(--spacing-base) * 9);
+	--spacing-10x: calc(var(--spacing-base) * 10);
+	--spacing-12x: calc(var(--spacing-base) * 12);
+	--spacing-16x: calc(var(--spacing-base) * 16);
+	--spacing-18x: calc(var(--spacing-base) * 18);
+	--spacing-20x: calc(var(--spacing-base) * 20);
+	--spacing-30x: calc(var(--spacing-base) * 30);
+	
+	--width-page: 1200px;
+	--width-container: 960px;
+	--width-paragraph: 720px;
+}
+[data-theme='dark'] {
+	--background-color: #1F1F1F;
+	--background-color-rgb: 31, 31, 31;
+	// --background-image: url('/assets/imgs/noise.gif');
+	--header-color: #303030;
+	--text-color: #FFFFFF;
+	--social-color: #808080;
+	--selection-bg-color: #B35C1D;
+	--selection-color: #1F1F1F;
+	--zelda-color-01: #3FDC41;
+	--zelda-color-02: #FFB75F;
+	--zelda-color-03: #AC5A0A;
+	--nintendo-ui: #43D6DF;
+}
