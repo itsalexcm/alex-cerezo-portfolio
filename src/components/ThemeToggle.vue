@@ -3,20 +3,20 @@
 </template>
 
 <script setup>
-import { useTheme } from '@/composables/useTheme.js';
+  import { useTheme } from '@/composables/useTheme.js';
 
-const { icon, toggleTheme } = useTheme();
+  const { icon, toggleTheme } = useTheme();
 </script>
 
 <style scoped>
-.theme-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 </style>

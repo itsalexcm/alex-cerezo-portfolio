@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-defineProps({
-  projects: Array
-});
+  defineProps({
+    projects: Array
+  });
 </script>
