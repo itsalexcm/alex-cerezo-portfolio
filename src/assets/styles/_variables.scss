@@ -1,7 +1,6 @@
 :root {
 	--background-color: #FFFFFF;
 	--background-color-rgb: 255, 255, 255;
-	// --background-image: none;
 	--header-color: #F5F5F5;
 	--text-color: #1F1F1F;
 	--social-color: #A0A0A0;
@@ -51,7 +50,6 @@
 [data-theme='dark'] {
 	--background-color: #1F1F1F;
 	--background-color-rgb: 31, 31, 31;
-	// --background-image: url('/assets/imgs/noise.gif');
 	--header-color: #303030;
 	--text-color: #FFFFFF;
 	--social-color: #808080;
@@ -61,4 +59,24 @@
 	--zelda-color-02: #FFB75F;
 	--zelda-color-03: #AC5A0A;
 	--nintendo-ui: #43D6DF;
+}
+@media (max-width: 720px) {
+  :root {
+		--spacing-base: 3px;
+
+		--font-size-base: 15px;
+		--font-size-medium: 18px;
+		--font-size-large: 21px;
+		--font-size-larger: 24px;
+		--font-size-extralarge: 30px;
+		--font-size-hero: 40px;
+	
+		--line-height-small: 22px;
+		--line-height-base: 26px;
+		--line-height-medium: 32px;
+		--line-height-mediumer: 36px;
+		--line-height-large: 42px;
+		--line-height-extralarge: 48px;
+		--line-height-hero: 60px;
+	}
 }

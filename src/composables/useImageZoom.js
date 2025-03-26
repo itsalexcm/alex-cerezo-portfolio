@@ -53,7 +53,6 @@ export function initImageZoom() {
         }, 300);
       }
 
-      document.addEventListener('click', closeFullscreen, { once: true });
       document.addEventListener('scroll', closeFullscreen, { once: true });
       document.addEventListener('keydown', closeFullscreen, { once: true });
       window.addEventListener('resize', closeFullscreen, { once: true });

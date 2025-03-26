@@ -4,9 +4,9 @@ import Profile from '../views/ProfileView.vue';
 import Case from '../views/CaseView.vue';
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/profile', component: Profile },
-  { path: '/work/:id', component: Case }
+  { path: '/', component: Home, name: 'home', meta: { title: 'Alex Cerezo | Product Designer' } },
+  { path: '/profile', component: Profile, name: 'profile', meta: { title: 'Alex Cerezo | Profile' } },
+  { path: '/work/:id', component: Case, name: 'case' }
 ];
 
 const router = createRouter({
