@@ -1,18 +1,7 @@
 <template>
-  <div v-if="layout === 'wrap'" class="case-media-wrap">
-    <div class="case-media">
-      <div v-for="(image, index) in images"
-        :key="index"
-        :class="['case-img', layout === 'wrap' ? 'wrap' : '']"
-      >
-        <img :src="image.src" :alt="image.alt" class="case-img-zoom">
-        <button class="case-img-open"></button>
-      </div>
-      <p v-if="caption" class="text medium caption">{{ caption }}</p>
-    </div>
-  </div>
-  <div v-else class="case-media">
-    <div v-for="(image, index) in images"
+  <div :class="['case-media', layout === 'wrap' ? 'case-media-wrap' : '']">
+    <div
+      v-for="(image, index) in images"
       :key="index"
       :class="['case-img', layout === 'wrap' ? 'wrap' : '']"
     >

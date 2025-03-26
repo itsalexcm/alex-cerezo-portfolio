@@ -7,7 +7,7 @@
       <component 
         :is="block.listType === 'ol' ? 'ol' : 'ul'" 
         v-if="block.type === 'list' && block.items.length" 
-        class="text large list">
+        :class="['text large list', content[index - 1]?.type === 'heading' ? 'lonely' : '']">
         <li v-for="(item, itemIndex) in block.items" :key="itemIndex" v-html="item"></li>
       </component>
     </template>
@@ -16,8 +16,11 @@
 
 <script setup>
 defineProps({
-  title: String,
-  content: Array
+  content: {
+    type: Array,
+    required: true
+  },
+  title: String
 });
 </script>
 

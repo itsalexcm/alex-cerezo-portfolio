@@ -73,9 +73,6 @@ h3 {
   line-height: var(--line-height-medium);
   font-weight: 600;
   letter-spacing: -0.25px;
-+ ul.list {
-  margin-top: var(--spacing-4x);
-}
 }
 h4 { 
   font-size: 20px;
@@ -123,6 +120,9 @@ ol.list {
   gap: 0;
   margin: var(--spacing-8x) 0;
   padding-left: var(--spacing-10x);
+  &.lonely {
+    margin-top: var(--spacing-4x);
+  }
   .text-link {
     color: var(--social-color);
     border-bottom: 1px solid var(--social-color);
@@ -145,26 +145,4 @@ ol.list {
     opacity: 1;
     transform: translateY(0);
   }
-}
-.alex {
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
-	gap: var(--spacing-4x);
-	h1 {
-		color: transparent;
-		line-height: var(--line-height-medium);
-		&::selection {
-			background-color: var(--selection-bg-color);
-			color: var(--selection-color);
-		}
-	}
-}
-@media (max-width: 720px) {
-	.alex {
-		h1 {
-			font-size: var(--font-size-large);
-			line-height: var(--line-height-medium);
-		}
-	}
 }

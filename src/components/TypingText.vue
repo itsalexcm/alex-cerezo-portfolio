@@ -30,8 +30,8 @@ const { text, cursorVisible } = useTyping();
       line-height: var(--line-height-extralarge);
     }
     .cursor {
-      display: inline-block;
       animation: blink 1s infinite;
+			margin-top: -6px;
     }
 }
 @keyframes blink {
