@@ -32,7 +32,7 @@ defineProps({
 }
 .case-media-wrap {
   display: flex;
-  flex-direction: row; // 👈 Aquí el foco
+  flex-direction: row;
   gap: var(--spacing-6x);
 }
 .case-img {
@@ -41,7 +41,6 @@ defineProps({
   align-items: flex-start;
   &.wrap {
     flex: 1 1 calc(50% - var(--spacing-6x));
-    max-width: calc(50% - var(--spacing-6x));
   }
   &.hidden {
     visibility: hidden;

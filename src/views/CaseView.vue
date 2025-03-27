@@ -44,6 +44,6 @@ onMounted(() => {
 	color: var(--social-color);
 	width: 100%;
 	text-align: center;
-	margin-top: var(--spacing-6x);
+	margin-top: 0;
 }
 </style>
