@@ -2,7 +2,7 @@ export default {
   id: "slack-case-study",
   title: "Slack Case Study",
   subtitle: "Research holds the answers.",
-  thumbnail: "/assets/imgs/slack/slack-platform.jpg",
+  thumbnail: "/assets/imgs/slack/slack01.jpg",
   components: [
     {
       type: "CaseBlock",
