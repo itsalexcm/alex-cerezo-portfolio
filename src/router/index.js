@@ -12,6 +12,7 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  // eslint-disable-next-line no-unused-vars
   scrollBehavior(to, from, savedPosition) {
     return { top: 0 };
   }
