@@ -31,7 +31,7 @@ const { text, cursorVisible } = useTyping();
     }
     .cursor {
       animation: blink 1s infinite;
-			margin-top: -6px;
+			margin-top: -4px;
     }
 }
 @keyframes blink {
