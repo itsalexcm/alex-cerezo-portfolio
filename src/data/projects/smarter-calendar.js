@@ -5,6 +5,15 @@ export default {
     thumbnail: "/assets/imgs/calendar/calendar08.jpg",
     components: [
       {
+        type: "CaseSummary",
+        data: {
+          panels: [
+            { label: "My Role", text: "Led UX research and design for the new calendar experience, collaborating closely with support and engineering teams from discovery to delivery." },
+            { label: "Impact", text: "Delivered a redesigned scheduling experience that increased user autonomy and reduced support overhead." }
+          ]
+        }
+      },
+      {
         type: "CaseBlock",
         data: {
           title: "1. Context",

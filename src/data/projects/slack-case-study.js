@@ -5,6 +5,21 @@ export default {
   thumbnail: "/assets/imgs/slack/slack01.jpg",
   components: [
     {
+      type: "CaseSummary",
+      data: {
+        panels: [
+          {
+            label: "My Role",
+            text: "Conducted user research and usability testing to identify and address key UX issues in Slack."
+          },
+          {
+            label: "Impact",
+            text: "Redesign proposals addressed top pain points, validated through usability tests with 100% task success."
+          }
+        ]
+      }
+    },
+    {
       type: "CaseBlock",
       data: {
         title: "1. Context",

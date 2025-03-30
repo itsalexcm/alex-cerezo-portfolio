@@ -5,6 +5,21 @@ export default {
     thumbnail: "/assets/imgs/greyfinch/greyfinch11.jpg",
     components: [
       {
+        type: "CaseSummary",
+        data: {
+          panels: [
+            {
+              label: "My Role",
+              text: "Introduced scalable design and documentation systems, redesigned components and led team workflows."
+            },
+            {
+              label: "Impact",
+              text: "Standardized design and research practices empowered faster delivery, scalability, and team alignment."
+            }
+          ]
+        }
+      },
+      {
         type: "CaseBlock",
         data: {
           title: "1. Context",

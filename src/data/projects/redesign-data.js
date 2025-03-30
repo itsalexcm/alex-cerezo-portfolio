@@ -5,6 +5,21 @@ export default {
     thumbnail: "/assets/imgs/wk/wk01.jpg",
     components: [
       {
+        type: "CaseSummary",
+        data: {
+          panels: [
+            {
+              label: "My Role",
+              text: "Led the UI redesign and introduced forecasting features, based on audits, surveys and heuristic evaluation."
+            },
+            {
+              label: "Impact",
+              text: "Enabled major revenue and market growth by improving data clarity and unlocking strategic features."
+            }
+          ]
+        }
+      },
+      {
         type: "CaseBlock",
         data: {
           title: "1. Context",

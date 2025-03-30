@@ -5,6 +5,21 @@ export default {
   thumbnail: "/assets/imgs/design/design01.jpg",
   components: [
     {
+      type: "CaseSummary",
+      data: {
+        panels: [
+          {
+            label: "My Role",
+            text: "Founding member of the Design System team, leading roadmap, tooling and design strategy across 5 brands."
+          },
+          {
+            label: "Impact",
+            text: "Delivered a unified system that improved efficiency, consistency and collaboration across designers and developers."
+          }
+        ]
+      }
+    },
+    {
       type: "CaseBlock",
       data: {
         title: "1. Context",
