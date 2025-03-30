@@ -69,7 +69,7 @@ h2 {
   letter-spacing: -0.5px;
 }
 h3 { 
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-larger);
   line-height: var(--line-height-medium);
   font-weight: 600;
   letter-spacing: -0.25px;
@@ -96,6 +96,11 @@ h6 {
   font-weight: 300;
   &:last-child {
     margin-bottom: 0;
+  }
+  &.small {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-small);
+    font-weight: 400;
   }
   &.medium {
     font-size: var(--font-size-medium);
