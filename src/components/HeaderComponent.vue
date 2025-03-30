@@ -11,6 +11,7 @@
           <p class="text large">{{ subtitle }}</p>
         </div>
       </div>
+      <CaseSummary :caseData="caseData" />
     </section>
   </div>
   <header v-else>
@@ -24,6 +25,7 @@ import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 import HeaderBrand from './HeaderBrand.vue';
 import MenuComponent from './MenuComponent.vue';
+import CaseSummary from './CaseSummary.vue';
 
 const route = useRoute();
 const isCaseView = computed(() => route.name === 'case');
@@ -31,7 +33,8 @@ const isCaseView = computed(() => route.name === 'case');
 defineProps({
   isCaseView: Boolean,
   title: String,
-  subtitle: String
+  subtitle: String,
+  caseData: Object
 })
 </script>
 
@@ -52,7 +55,7 @@ defineProps({
       justify-content: space-between;
       width: 100%;
       max-width: var(--width-page);
-      margin-bottom: var(--spacing-20x);
+      margin-bottom: var(--spacing-12x);
       box-sizing: border-box;
       padding: calc(var(--spacing-20x) + var(--spacing-20x)) var(--spacing-8x) 0 var(--spacing-8x);
       h1 {

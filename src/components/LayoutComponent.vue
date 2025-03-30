@@ -3,11 +3,12 @@
     :isCaseView="isCaseView"
     :title="title"
     :subtitle="subtitle"
+    :caseData="caseData"
   />
   <main>
-    <section class="fade-in">
+    <div class="fade-in">
       <slot />
-    </section>
+    </div>
   </main>
   <FooterComponent />
 </template>
@@ -19,7 +20,8 @@ import FooterComponent from '@/components/FooterComponent.vue'
 defineProps({
   isCaseView: Boolean,
   title: String,
-  subtitle: String
+  subtitle: String,
+  caseData: Object
 })
 </script>
 

@@ -3,6 +3,7 @@
     :isCaseView="true"
     :title="caseData?.title"
     :subtitle="caseData?.subtitle"
+    :caseData="caseData"
   >
     <article class="case">
       <component
