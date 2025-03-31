@@ -172,8 +172,7 @@ export default {
             { type: "heading", text: "Additional Functionalities" },
             {
               type: "list",
-              listType: "ol",
-              start: 3,
+              listType: "ul",
               items: [
                 "Compare data across multiple periods.",
                 "View complete activity logs.",

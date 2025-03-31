@@ -36,7 +36,7 @@ defineProps({
     margin-bottom: 0;
   }
   span.bold {
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 </style>

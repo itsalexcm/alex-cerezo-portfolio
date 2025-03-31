@@ -185,7 +185,7 @@ export default {
         data: {
           content: [
             { type: "heading", text: "Now We Are Talking" },
-            { type: "heading", text: "In parallel, I began <span class='bold'>redesigning existing interface elements</span> using this new system while also creating new components." }
+            { type: "paragraph", text: "In parallel, I began <span class='bold'>redesigning existing interface elements</span> using this new system while also creating new components." }
           ]
         }
       },
