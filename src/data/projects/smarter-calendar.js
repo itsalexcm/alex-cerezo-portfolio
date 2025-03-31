@@ -42,6 +42,26 @@ export default {
         }
       },
       {
+        type: "CaseResults",
+        data: {
+          title: "Key Results",
+          panels: [
+            {
+              label: "<span class='bold'>⏱️ 40%</span> faster scheduling process after redesign.",
+              text: "New slot suggestions and sidebar features helped clinics book appointments faster."
+            },
+            {
+              label: "<span class='bold'>📉 30%</span> fewer support requests related to booking.",
+              text: "Redesign addressed key confusion points and reduced user friction."
+            },
+            {
+              label: "<span class='bold'>🎯 6</span> top issues resolved through usability testing.",
+              text: "User research informed high-impact improvements that boosted satisfaction."
+            }
+          ]
+        }
+      },
+      {
         type: "CaseBlock",
         data: {
           title: "3. Discovery",
@@ -184,17 +204,6 @@ export default {
                 "<span class='bold'>Improved usability</span>: Simplified appointment management through the sidebar and introduced highly requested features like a mini-calendar and patient detail enhancements."
               ]
             }
-          ]
-        }
-      },
-      {
-        type: "CaseResults",
-        data: {
-          title: "Key Results",
-          panels: [
-            { label: "<span class='bold'>📈 +197%</span> revenue growth over two years.", text: "Established a unified library of reusable elements across 5 brands." },
-            { label: "<span class='bold'>🌍 2 new markets</span> launched with localised UX.", text: "Teams reduced duplication and sped up delivery through shared design tokens and documentation." },
-            { label: "<span class='bold'>🏆 Top-ranked</span> financial infographic tool.", text: "Improved collaboration and consistency across product teams and stakeholders." }
           ]
         }
       },

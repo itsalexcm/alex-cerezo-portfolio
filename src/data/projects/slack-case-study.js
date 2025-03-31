@@ -68,6 +68,17 @@ export default {
       }
     },
     {
+      type: "CaseResults",
+      data: {
+        title: "Key Results",
+        panels: [
+          { label: "<span class='bold'>✅ 100%</span> task success in testing.", text: "All participants completed the core tasks in usability testing." },
+          { label: "<span class='bold'>🔍 6 pain points</span> resolved via redesign.", text: "Redesign tackled key user frustrations identified through research." },
+          { label: "<span class='bold'>📊 Layout validated</span> with user feedback.", text: "User testing confirmed the value of a new sidebar and improved layout." }
+        ]
+      }
+    },
+    {
       type: "CaseMedia",
       data: {
         images: [
@@ -319,17 +330,6 @@ export default {
             type: "paragraph",
             text: "All participants completed these tasks successfully."
           }
-        ]
-      }
-    },
-    {
-      type: "CaseResults",
-      data: {
-        title: "Key Results",
-        panels: [
-          { label: "<span class='bold'>✅ 100%</span> task success in testing.", text: "All participants completed the core tasks in usability testing." },
-          { label: "<span class='bold'>🔍 6 pain points</span> resolved via redesign.", text: "Redesign tackled key user frustrations identified through research." },
-          { label: "<span class='bold'>📊 Layout validated</span> with user feedback.", text: "User testing confirmed the value of a new sidebar and improved layout." }
         ]
       }
     },

@@ -56,6 +56,17 @@ export default {
         }
       },
       {
+        type: "CaseResults",
+        data: {
+          title: "Key Results",
+          panels: [
+            { label: "<span class='bold'>📈 +197%</span> revenue growth over two years.", text: "Revenue increased from €1.5M to €4.5M over two years post-redesign." },
+            { label: "<span class='bold'>🌍 2 new markets</span> launched with localised UX.", text: "Expanded into Spain and Denmark with localized, scalable design." },
+            { label: "<span class='bold'>🏆 Top-ranked</span> financial infographic tool.", text: "Recognized as one of Europe’s leading infographic tools for financial data." }
+          ]
+        }
+      },
+      {
         type: "CaseMedia",
         data: {
           images: [
@@ -215,17 +226,6 @@ export default {
                 "<span class='bold'>Industry recognition</span>: Finsit became one of Europe's top choices for financial infographic solutions."
               ]
             }
-          ]
-        }
-      },
-      {
-        type: "CaseResults",
-        data: {
-          title: "Key Results",
-          panels: [
-            { label: "<span class='bold'>📈 +197%</span> revenue growth over two years.", text: "Revenue increased from €1.5M to €4.5M over two years post-redesign." },
-            { label: "<span class='bold'>🌍 2 new markets</span> launched with localised UX.", text: "Expanded into Spain and Denmark with localized, scalable design." },
-            { label: "<span class='bold'>🏆 Top-ranked</span> financial infographic tool.", text: "Recognized as one of Europe’s leading infographic tools for financial data." }
           ]
         }
       },
