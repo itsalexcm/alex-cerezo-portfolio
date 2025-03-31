@@ -21,7 +21,7 @@ const props = defineProps({
 const summaryPanels = props.caseData?.components.find(c => c.type === 'CaseSummary')?.data?.panels || []
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .case-summary {
   width: 100%;
   display: flex;

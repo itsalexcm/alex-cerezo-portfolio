@@ -257,6 +257,26 @@ export default {
       }
     },
     {
+      type: "CaseResults",
+      data: {
+        title: "Key Results",
+        panels: [
+          {
+            label: "<span class='bold'>🎯 100+</span> components standardized for consistent UX. Established a unified library of reusable elements across 5 brands.",
+            text: "Established a unified library of reusable elements across 5 brands."
+          },
+          {
+            label: "<span class='bold'>⏱️ Faster</span> delivery through shared tokens and tools. Teams reduced duplication and sped up delivery through shared design tokens and documentation.",
+            text: "Teams reduced duplication and sped up delivery through shared design tokens and documentation."
+          },
+          {
+            label: "<span class='bold'>🤝 15+</span> squads aligned via training and documentation. Improved collaboration and consistency across product teams and stakeholders.",
+            text: "Improved collaboration and consistency across product teams and stakeholders."
+          }
+        ]
+      }
+    },
+    {
       type: "CaseBlock",
       data: {
         title: "8. Next Steps",

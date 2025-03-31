@@ -188,6 +188,17 @@ export default {
         }
       },
       {
+        type: "CaseResults",
+        data: {
+          title: "Key Results",
+          panels: [
+            { label: "<span class='bold'>📈 +197%</span> revenue growth over two years.", text: "Established a unified library of reusable elements across 5 brands." },
+            { label: "<span class='bold'>🌍 2 new markets</span> launched with localised UX.", text: "Teams reduced duplication and sped up delivery through shared design tokens and documentation." },
+            { label: "<span class='bold'>🏆 Top-ranked</span> financial infographic tool.", text: "Improved collaboration and consistency across product teams and stakeholders." }
+          ]
+        }
+      },
+      {
         type: "CaseBlock",
         data: {
           title: "6. Next Steps",

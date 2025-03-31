@@ -239,6 +239,17 @@ export default {
         }
       },
       {
+        type: "CaseResults",
+        data: {
+          title: "Key Results",
+          panels: [
+            { label: "<span class='bold'>🧱 50+ components</span> built for consistency.", text: "Redesigned and documented components for consistency and scalability." },
+            { label: "<span class='bold'>📚 Centralised docs</span> with research and specs.", text: "Established centralized Notion-based documentation for all team projects." },
+            { label: "<span class='bold'>⚡ Fast onboarding</span> through clear workflows.", text: "New designers integrated faster thanks to clear processes and file structures." }
+          ]
+        }
+      },
+      {
         type: "CaseBlock",
         data: {
           title: "7. Next Steps",

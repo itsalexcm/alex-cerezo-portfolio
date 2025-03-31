@@ -23,6 +23,7 @@ import { projects } from '@/data/projects.js'
 import LayoutComponent from '@/components/LayoutComponent.vue'
 import CaseBlock from '@/components/CaseBlock.vue'
 import CaseMedia from '@/components/CaseMedia.vue'
+import CaseResults from '@/components/CaseResults.vue'
 import { initImageZoom } from '@/composables/useImageZoom.js'
 
 const route = useRoute()
@@ -30,7 +31,8 @@ const caseData = computed(() => projects.find(p => p.id === route.params.id))
 
 const componentMap = {
   CaseBlock,
-  CaseMedia
+  CaseMedia,
+  CaseResults
 }
 
 const getComponent = (type) => componentMap[type] || null
