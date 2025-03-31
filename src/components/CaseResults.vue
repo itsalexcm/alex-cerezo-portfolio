@@ -52,17 +52,11 @@
     }
   }
   @media (max-width: 720px) {
-    .case-summary {
-      .case-summary-inner {
+    .case-results {
+      .case-results-inner {
+        flex-wrap: wrap;
         .panel {
           flex: 1 1 100%;
-          &:first-child {
-            border-bottom: 1px solid var(--text-color);
-          }
-          &:last-child {
-            border-left: 1px solid var(--text-color);
-            border-top: 0;
-          }
         }
       } 
     }
