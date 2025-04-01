@@ -73,8 +73,8 @@ export default {
         title: "Key Results",
         panels: [
           { label: "<span class='bold'>✅ 100%</span> task success in testing.", text: "All participants completed the core tasks in usability testing." },
-          { label: "<span class='bold'>🔍 6 pain points</span> resolved via redesign.", text: "Redesign tackled key user frustrations identified through research." },
-          { label: "<span class='bold'>📊 Layout validated</span> with user feedback.", text: "User testing confirmed the value of a new sidebar and improved layout." }
+          { label: "<span class='bold'>🔍 6</span> pain points resolved via redesign.", text: "Redesign tackled key user frustrations identified through research." },
+          { label: "<span class='bold'>📊 Layout</span> validated with user feedback.", text: "User testing confirmed the value of a new sidebar and improved layout." }
         ]
       }
     },
