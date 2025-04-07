@@ -11,6 +11,7 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 body {
+  overflow-y: scroll;
   opacity: 0;
   background-color: var(--background-color);
   color: var(--text-color);

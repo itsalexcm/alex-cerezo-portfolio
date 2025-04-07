@@ -16,9 +16,21 @@ import ProfileContent from '@/components/ProfileContent.vue';
 	justify-content: space-between;
 	gap: var(--spacing-12x);
 	margin-top: var(--spacing-10x);
+  .profile-inner {
+    flex: 1;
+    img.profile-picture {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+  .profile-content {
+    flex: 1;
+    .text.hero {
+      margin-bottom: var(--spacing-10x);
+    }
+  }
 	p {
 		margin: 0;
-		flex: 1;
 	}
 }
 @media (max-width: 720px) {
