@@ -36,6 +36,11 @@ a {
   position: relative;
   text-decoration: none;
 }
+.text-link {
+  color: var(--social-color);
+  border-bottom: 1px solid var(--social-color);
+  padding-bottom: 2px;
+}
 p {
   margin: var(--spacing-4x) 0;
   + p {
@@ -128,11 +133,6 @@ ol.list {
   padding-left: var(--spacing-10x);
   &.lonely {
     margin-top: var(--spacing-4x);
-  }
-  .text-link {
-    color: var(--social-color);
-    border-bottom: 1px solid var(--social-color);
-    padding-bottom: 2px;
   }
 }
 ol.list {

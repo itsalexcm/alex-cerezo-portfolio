@@ -15,9 +15,13 @@
           <br /><br />
           I'm deeply passionate about solving complex problems with creativity and empathy, whether it's simplifying workflows, enhancing user experiences or exploring emerging technologies.
           <br /><br />
-          Outside work I love playing (and studying) video-games, running after a piece of plastic in any Ultimate Frisbee tournament and traveling as much as I can.
+          Outside work I love playing and studying video-games (Have you heard of the <KonamiTooltip>Konami Code</KonamiTooltip>?), running after a piece of plastic in any Ultimate Frisbee tournament and traveling as much as I can.
         </p>
       </div>
     </div>
   </section>
 </template>
+
+<script setup>
+import KonamiTooltip from '@/components/KonamiTooltip.vue'
+</script>
