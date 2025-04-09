@@ -4,7 +4,7 @@
     :class="['tooltip', { 'animated-text': !konamiActivated }]"
     @mouseenter="showTooltip"
     @mouseleave="handleMouseLeave"
-    @touchstart.prevent="showTooltip"
+    @touchstart.prevent="isTouchDevice ? null : showTooltip"
   >
     <slot>Konami Code</slot>
     <div
@@ -37,8 +37,14 @@ const sequence = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','Arrow
 const displaySequence = ['↑','↑','↓','↓','←','→','←','→','B','A']
 const progress = ref(0)
 const konamiActivated = ref(false)
+const isTouchDevice = ref(false)
+
+onMounted(() => {
+  isTouchDevice.value = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+})
 
 const showTooltip = () => {
+  if (isTouchDevice.value) return
   show.value = true
 }
 
@@ -164,6 +170,18 @@ onBeforeUnmount(() => {
   color: transparent;
   animation: textShine 4s linear infinite;
 }
+
+@media (max-width: 720px) {
+  .tooltip.animated-text {
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    color: var(--text-color);
+    animation: none;
+    font-weight: 300;
+  }
+}
+
 .key-content {
   display: flex;
   gap: 4px;
