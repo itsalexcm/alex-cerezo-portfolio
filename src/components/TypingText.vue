@@ -21,7 +21,7 @@ const { text, cursorVisible } = useTyping();
     .typing,
     .cursor {
       min-height: var(--line-height-extralarge);
-      font-family: 'CircularStd', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       font-weight: 700;
       white-space: nowrap;
       overflow: hidden;
