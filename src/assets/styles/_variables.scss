@@ -16,20 +16,27 @@
 	--konami-color-03: #FCAAFF;
 	--konami-color-04: #CC99FF;
 	--konami-color-05: #0057FF;
+
+// ESTOS COLORES NO HAN SIDO REVISADOS!!!
+
+	--extra-neutral-01: #CBCBCB;
+	--extra-neutral-02: #F9FBFD;
 	
-	--font-size-base: 15px;
-	--font-size-medium: 17px;
+	--font-size-base: 16px; // UP TITLE
+	--font-size-medium: 18px; // PARAGRAHP
 	--font-size-large: 20px;
 	--font-size-larger: 22px;
-	--font-size-extralarge: 28px;
-	--font-size-hero: 36px;
+	--font-size-extralarge: 28px; // PARAGRAHP TITLE
+	--font-size-hero: 40px; // TÍTULOS PÁRRAFOS
+	--font-size-extrahero: 64px; // TÍTULOS HERO
 
-	--line-height-small: 22px;
-	--line-height-base: 24px;
-	--line-height-medium: 28px;
-	--line-height-mediumer: 32px;
-	--line-height-large: 36px;
-	--line-height-extralarge: 44px;
+	--line-height-small: 26px; // UP TITLE
+	--line-height-base: 28px; // PARAGRAHP
+	--line-height-medium: 30px; // PARAGRAHP TITLE
+	--line-height-mediumer: 40px;
+	--line-height-large: 48px;
+	--line-height-extralarge: 56px; // TÍTULOS PÁRRAFOS
+	--line-height-hero: 80px; // TÍTULOS HERO
 	
 	--spacing-base: 4px;
 	--spacing-1x: var(--spacing-base);
@@ -43,12 +50,14 @@
 	--spacing-9x: calc(var(--spacing-base) * 9);
 	--spacing-10x: calc(var(--spacing-base) * 10);
 	--spacing-12x: calc(var(--spacing-base) * 12);
+	--spacing-14x: calc(var(--spacing-base) * 12);
 	--spacing-16x: calc(var(--spacing-base) * 16);
 	--spacing-18x: calc(var(--spacing-base) * 18);
 	--spacing-20x: calc(var(--spacing-base) * 20);
 	--spacing-30x: calc(var(--spacing-base) * 30);
 	
 	--width-page: 1200px;
+	--width-block: 1024px;
 	--width-container: 960px;
 	--width-paragraph: 600px;
 }
