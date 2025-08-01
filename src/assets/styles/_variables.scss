@@ -1,42 +1,53 @@
 :root {
-	--background-color: #FFFFFF;
-	--background-color-rgb: 255, 255, 255;
-	--header-color: #F5F5F5;
-	--text-color: #1F1F1F;
-	--social-color: #A0A0A0;
-	--selection-bg-color: #FFB75F;
-	--selection-color: #FFFFFF;
-	--zelda-color-01: #3FDC41;
+  --zelda-color-01: #3FDC41;
 	--zelda-color-02: #FFB75F;
 	--zelda-color-03: #AC5A0A;
-	--nintendo-color: #43D6DF;
-	--highlight-color: #FFCC00;
-	--konami-color-01: #0057FF;
-	--konami-color-02: #8AFFFF;
-	--konami-color-03: #FCAAFF;
-	--konami-color-04: #CC99FF;
-	--konami-color-05: #0057FF;
 
-// ESTOS COLORES NO HAN SIDO REVISADOS!!!
+  --white: #FFFFFF;
+  --black: #000000;
 
-	--extra-neutral-01: #CBCBCB;
-	--extra-neutral-02: #F9FBFD;
-	
-	--font-size-base: 16px; // UP TITLE
-	--font-size-medium: 18px; // PARAGRAHP
-	--font-size-large: 20px;
-	--font-size-larger: 22px;
-	--font-size-extralarge: 28px; // PARAGRAHP TITLE
-	--font-size-hero: 40px; // TÍTULOS PÁRRAFOS
-	--font-size-extrahero: 64px; // TÍTULOS HERO
+  --bg-primary: #FFFFFF;
+  --bg-primary-rgb: 255, 255, 255;
+  --bg-secondary: #F9F8F6;
+  --bg-secondary-rgb: 249, 248, 246;
 
-	--line-height-small: 26px; // UP TITLE
-	--line-height-base: 28px; // PARAGRAHP
-	--line-height-medium: 30px; // PARAGRAHP TITLE
-	--line-height-mediumer: 40px;
-	--line-height-large: 48px;
-	--line-height-extralarge: 56px; // TÍTULOS PÁRRAFOS
-	--line-height-hero: 80px; // TÍTULOS HERO
+  --text-primary: #222222;
+  --text-accent: #EE3E2B;
+
+  --accent-primary: #B1F713;
+  --accent-secondary: var(--text-accent);
+
+  --border-muted: #CCC3B3;
+  --underline-color: rgba(224, 219, 209, 1);
+
+  --social-color: var(--border-muted);
+
+  --font-size-sm: 16px;
+  --font-size-base: 18px;
+  --font-size-md: 20px;
+  --font-size-lg: 26px;
+  --font-size-xl: 32px;
+  --font-size-2xl: 48px;
+  --font-size-3xl: 60px;
+
+  --line-height-sm: 1.25;
+  --line-height-base: 1.5;
+  --line-height-md: 28px;
+  --line-height-lg: 30px;
+  --line-height-xl: 36px;
+  --line-height-2xl: 42px;
+  --line-height-3xl: 64px;
+  --line-height-4xl: 70px;
+
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
 	
 	--spacing-base: 4px;
 	--spacing-1x: var(--spacing-base);
@@ -56,46 +67,50 @@
 	--spacing-20x: calc(var(--spacing-base) * 20);
 	--spacing-30x: calc(var(--spacing-base) * 30);
 	
-	--width-page: 1200px;
-	--width-block: 1024px;
-	--width-container: 960px;
-	--width-paragraph: 600px;
+	--width-xl: 1200px;
+	--width-lg: 960px;
+	--width-md: 720px;
+	--width-sm: 640px;
 }
 [data-theme='dark'] {
-	--background-color: #1F1F1F;
-	--background-color-rgb: 31, 31, 31;
-	--header-color: #303030;
-	--text-color: #FFFFFF;
-	--social-color: #808080;
-	--selection-bg-color: #B35C1D;
-	--selection-color: #1F1F1F;
-	--zelda-color-01: #3FDC41;
-	--zelda-color-02: #FFB75F;
-	--zelda-color-03: #AC5A0A;
-	--nintendo-color: #43D6DF;
-	--highlight-color: #FFCC00;
-	--konami-color-01: #0057FF;
-	--konami-color-02: #8AFFFF;
-	--konami-color-03: #FCAAFF;
-	--konami-color-04: #CC99FF;
-	--konami-color-05: #0057FF;
+  --bg-primary: #1F1F1F;
+  --bg-primary-rgb: 31, 31, 31;
+  --bg-secondary: #2A2A2A;
+  --bg-secondary-rgb: 42, 42, 42;
+
+  --text-primary: var(--white);
+  --text-accent: #E14B4B;
+
+  --accent-primary: #9CD80D;
+
+  --border-muted: #4D4D4D;
+  --underline-color: rgba(80, 80, 80, 1);
+
+  --social-color: var(--border-muted);
+  ::selection {
+    background-color: var(--accent-primary);
+    color: var(--black);
+  }
 }
 @media (max-width: 720px) {
   :root {
-		--spacing-base: 3px;
+    --spacing-base: 3px;
 
-		--font-size-base: 15px;
-		--font-size-medium: 17px;
-		--font-size-large: 20px;
-		--font-size-larger: 22px;
-		--font-size-extralarge: 28px;
-		--font-size-hero: 36px;
-	
-		--line-height-small: 22px;
-		--line-height-base: 24px;
-		--line-height-medium: 28px;
-		--line-height-mediumer: 32px;
-		--line-height-large: 36px;
-		--line-height-extralarge: 40px;
-	}
+    --font-size-sm: 14px;
+    --font-size-base: 15px;
+    --font-size-md: 17px;
+    --font-size-lg: 20px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 32px;
+    --font-size-3xl: 42px;
+
+    --line-height-sm: 1.25;
+    --line-height-base: 1.4;
+    --line-height-md: 24px;
+    --line-height-lg: 28px;
+    --line-height-xl: 32px;
+    --line-height-2xl: 38px;
+    --line-height-3xl: 52px;
+    --line-height-4xl: 52px;
+  }
 }
