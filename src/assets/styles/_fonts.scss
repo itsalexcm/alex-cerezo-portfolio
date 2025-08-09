@@ -97,101 +97,85 @@
 		url("@/assets/fonts/inter/Inter-LightItalic.ttf") format("truetype");
 }
 
-// GRAPHIT
+// CIRCULAR
 
 @font-face {
-	font-family: 'Graphit';
+	font-family: 'CircularStd';
 	font-style: normal;
 	font-weight: 900;
 	src:
-		local("Graphit-Black"),
-		url("@/assets/fonts/graphit/Graphit-Black.ttf") format("truetype");
+		local("CircularStd-Black"),
+		url("@/assets/fonts/circular/CircularStd-Black.ttf") format("truetype");
 }
 @font-face {
-	font-family: 'Graphit';
+	font-family: 'CircularStd';
 	font-style: italic;
 	font-weight: 900;
 	src:
-		local("Graphit-BlackItalic"),
-		url("@/assets/fonts/graphit/Graphit-BlackItalic.ttf") format("truetype");
+		local("CircularStd-BlackItalic"),
+		url("@/assets/fonts/circular/CircularStd-BlackItalic.ttf") format("truetype");
 }
 @font-face {
-	font-family: 'Graphit';
+	font-family: 'CircularStd';
 	font-style: normal;
 	font-weight: 700;
 	src:
-		local("Graphit-Bold"),
-		url("@/assets/fonts/graphit/Graphit-Bold.ttf") format("truetype");
+		local("CircularStd-Bold"),
+		url("@/assets/fonts/circular/CircularStd-Bold.ttf") format("truetype");
 }
 @font-face {
-	font-family: 'Graphit';
+	font-family: 'CircularStd';
 	font-style: italic;
 	font-weight: 700;
 	src:
-		local("Graphit-BoldItalic"),
-		url("@/assets/fonts/graphit/Graphit-BoldItalic.ttf") format("truetype");
+		local("CircularStd-BoldItalic"),
+		url("@/assets/fonts/circular/CircularStd-BoldItalic.ttf") format("truetype");
 }
 @font-face {
-	font-family: 'Graphit';
+	font-family: 'CircularStd';
 	font-style: normal;
 	font-weight: 500;
 	src:
-		local("Graphit-Medium"),
-		url("@/assets/fonts/graphit/Graphit-Medium.ttf") format("truetype");
+		local("CircularStd-Medium"),
+		url("@/assets/fonts/circular/CircularStd-Medium.ttf") format("truetype");
 }
 @font-face {
-	font-family: 'Graphit';
+	font-family: 'CircularStd';
 	font-style: italic;
 	font-weight: 500;
 	src:
-		local("Graphit-MediumItalic"),
-		url("@/assets/fonts/graphit/Graphit-MediumItalic.ttf") format("truetype");
+		local("CircularStd-MediumItalic"),
+		url("@/assets/fonts/circular/CircularStd-MediumItalic.ttf") format("truetype");
 }
 @font-face {
-	font-family: 'Graphit';
+	font-family: 'CircularStd';
 	font-style: normal;
 	font-weight: 400;
 	src:
-		local("Graphit-Regular"),
-		url("@/assets/fonts/graphit/Graphit-Regular.ttf") format("truetype");
+		local("CircularStd-Book"),
+		url("@/assets/fonts/circular/CircularStd-Book.ttf") format("truetype");
 }
 @font-face {
-	font-family: 'Graphit';
+	font-family: 'CircularStd';
 	font-style: italic;
 	font-weight: 400;
 	src:
-		local("Graphit-Italic"),
-		url("@/assets/fonts/graphit/Graphit-RegularItalic.ttf") format("truetype");
+		local("CircularStd-BookItalic"),
+		url("@/assets/fonts/circular/CircularStd-BookItalic.ttf") format("truetype");
 }
 @font-face {
-	font-family: 'Graphit';
+	font-family: 'CircularStd';
 	font-style: normal;
 	font-weight: 300;
 	src:
-		local("Graphit-Light"),
-		url("@/assets/fonts/graphit/Graphit-Light.ttf") format("truetype");
+		local("CircularStd-Light"),
+		url("@/assets/fonts/circular/CircularStd-Light.ttf") format("truetype");
 }
 @font-face {
-	font-family: 'Graphit';
+	font-family: 'CircularStd';
 	font-style: italic;
 	font-weight: 300;
 	src:
-		local("Graphit-LightItalic"),
-		url("@/assets/fonts/graphit/Graphit-LightItalic.ttf") format("truetype");
-}
-@font-face {
-	font-family: 'Graphit';
-	font-style: normal;
-	font-weight: 100;
-	src:
-		local("Graphit-Thin"),
-		url("@/assets/fonts/graphit/Graphit-Thin.ttf") format("truetype");
-}
-@font-face {
-	font-family: 'Graphit';
-	font-style: italic;
-	font-weight: 100;
-	src:
-		local("Graphit-ThinItalic"),
-		url("@/assets/fonts/graphit/Graphit-ThinItalic.ttf") format("truetype");
+		local("CircularStd-LightItalic"),
+		url("@/assets/fonts/circular/CircularStd-LightItalic.ttf") format("truetype");
 }
