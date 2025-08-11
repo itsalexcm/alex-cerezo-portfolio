@@ -79,4 +79,10 @@ const props = defineProps({
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 720px) {
+  .carousel-track img {
+    height: 400px;
+  }
+}
 </style>
