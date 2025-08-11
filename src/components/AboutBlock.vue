@@ -21,7 +21,7 @@
 .about {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   gap: var(--spacing-10x);
   margin-top: var(--spacing-10x);
   .about-alex {
