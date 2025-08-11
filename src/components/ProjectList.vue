@@ -1,13 +1,18 @@
 <template>
   <div class="work">
-    <p class="title text large">Work</p>
+    <!-- <p class="work-label text regular">Work</p> -->
     <ul class="work-list">
       <li v-for="project in projects" :key="project.id">
         <router-link :to="`/work/${project.id}`">
-          <div class="case-item">
-            <img class="case-thumbnail" :src="project.thumbnail" :alt="project.title" />
-            <h3 class="case-title">{{ project.title }}</h3>
-            <p class="case-desc text large">{{ project.subtitle }}</p>
+          <div class="work-item">
+            <div class="work-thumbnail">
+              <img class="case-img" :src="project.thumbnail" :alt="project.title" />
+            </div>
+            <div class="work-content">
+              <h3 class="work-title">{{ project.title }}</h3>
+              <p class="work-desc text regular">{{ project.intro }}</p>
+              <p class="work-button text regular">Case Study →</p>
+            </div>
           </div>
         </router-link>
       </li>
@@ -22,35 +27,52 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
-.title {
-  margin-top: 0;
-  margin-bottom: var(--spacing-8x);
-}
-.work-list {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  gap: var(--spacing-20x);
-  margin: 0;
-  padding: 0;
-  .case-item {
+.work {
+  .work-label {
+    margin-bottom: var(--spacing-8x);
+  }
+  .work-list {
     display: flex;
     flex-direction: column;
-    color: var(--text-color);
-    .case-thumbnail {
-      object-fit: cover;
+    list-style: none;
+    gap: var(--spacing-20x);
+    margin: 0;
+    padding: 0;
+    .work-item {
+      display: flex;
+      align-items: center;
+      color: var(--text-primary);
+      .work-thumbnail {
+        flex: 2;
+        background-color: var(--bg-primary);
+        border-radius: var(--spacing-4x);
+        .case-img {
+          object-fit: cover;
+        }
+      }
+    .work-content {
+      flex: 1;
+      margin: 0 0 0 var(--spacing-16x);
+      .work-title {
+        font-size: var(--font-size-lg);
+        line-height: var(--line-height-xl);
+        font-weight: var(--font-weight-bold);
+        max-width: var(--width-sm);
+        margin-bottom: 0px;
+      }
+      .work-desc {
+        margin-top: var(--spacing-4x);
+      }
+      .work-button {
+        color: #1A1A1A;
+        padding: var(--spacing-3x) var(--spacing-5x);
+        margin-top: var(--spacing-6x);
+        display: inline-flex;
+        transition: all .3s ease;
+        background-color: var(--accent-primary);
+        border-radius: var(--spacing-30x);
+      }
     }
-    .case-title {
-      font-size: var(--font-size-larger);
-      line-height: var(--line-height-mediumer);
-      font-weight: 500;
-      max-width: var(--width-paragraph);
-      margin-top: var(--spacing-6x);
-      color: var(--text-color);
-    }
-    .case-desc {
-      max-width: var(--width-paragraph);
-      margin-top: 0;
     }
   }
 }

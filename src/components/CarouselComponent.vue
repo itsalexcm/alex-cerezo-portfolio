@@ -1,29 +1,39 @@
 <template>
-  <div class="carousel-container">
-    <div class="carousel-track">
+  <div :class="['carousel-container', props.customClass || '']">
+    <div class="carousel-track" :style="{ animationDuration: props.speed + 's' }">
       <div class="carousel-group" v-for="n in 2" :key="n">
-        <img
-          v-for="(image, i) in images"
-          :key="i"
-          :src="image.src"
-          :alt="image.alt"
-        />
+        <template v-if="props.images && props.images.length">
+          <img
+            v-for="(image, i) in props.images"
+            :key="i"
+            :src="image.src"
+            :alt="image.alt"
+          />
+        </template>
+        <template v-else-if="props.items && props.items.length">
+          <div class="carousel-item" v-for="(it, i) in props.items" :key="i">
+            <slot name="item" :item="it" />
+          </div>
+        </template>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-defineProps({
-  images: {
-    type: Array,
-    required: true
-  }
+const props = defineProps({
+  customClass: String,
+  images: { type: Array, default: null },
+  items: { type: Array, default: null },
+  speed: { type: Number, default: 30 }
 })
 </script>
 
 <style lang="scss">
 .carousel-container {
+  &.margin-top {
+    margin-top: var(--spacing-30x);
+  }
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -36,32 +46,11 @@ defineProps({
       rgba(var(--bg-primary-rgb), 0) 100%);
 }
 
-// .carousel-container::before,
-// .carousel-container::after {
-//   content: '';
-//   position: absolute;
-//   top: 0;
-//   width: 80px;
-//   height: 100%;
-//   z-index: 2;
-//   pointer-events: none;
-// }
-
-// .carousel-container::before {
-//   left: 0;
-//   background: linear-gradient(to right, var(--bg-primary), transparent);
-// }
-
-// .carousel-container::after {
-//   right: 0;
-//   background: linear-gradient(to left, var(--bg-primary), transparent);
-// }
-
 .carousel-track {
   display: flex;
   flex-wrap: nowrap;
   width: max-content;
-  animation: scroll-left 30s linear infinite;
+  animation: scroll-left linear infinite;
 }
 
 .carousel-group {
@@ -76,9 +65,11 @@ defineProps({
   min-width: 100px;
 }
 
-// .carousel-container:hover .carousel-track {
-//   animation-play-state: paused;
-// }
+.carousel-item {
+  margin-right: var(--spacing-8x);
+  flex-shrink: 0;
+  min-width: 280px;
+}
 
 @keyframes scroll-left {
   0% {

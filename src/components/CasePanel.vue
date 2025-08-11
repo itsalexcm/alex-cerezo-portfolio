@@ -9,15 +9,11 @@
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="18" cy="18" r="12" fill="var(--text-primary)"/>
           <circle cx="18" cy="18" r="9" fill="var(--bg-primary)"/>
-          <circle cx="18" cy="18" r="7" fill="var(--accent-secondary)"/>
+          <circle cx="18" cy="18" r="6" fill="var(--text-accent)"/>
         </svg>
       </div>
       <div class="panel-content">
-        <div v-if="variant === 'zeta'" class="panel-quote">
-          <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.935547 12.9705L6.79155 0.394531H11.6875L7.65555 11.9145H11.1115V22.0905H0.935547V12.9705ZM15.1435 12.9705L20.9995 0.394531H25.8955L21.8635 11.9145H25.3195V22.0905H15.1435V12.9705Z" fill="var(--accent-secondary)"/>
-          </svg>
-        </div>
+        <div v-if="variant === 'zeta'" class="panel-quote" aria-hidden="true">“</div>
         <h4 v-if="panel.label" class="panel-heading" v-html="panel.label"></h4>
         <p v-if="panel.text" class="text regular" v-html="panel.text"></p>
         <ul v-else-if="panel.list && panel.list.length" class="text regular list">
@@ -27,7 +23,7 @@
     </div>
     <div v-if="variant === 'alpha'" class="panel-line">
       <svg width="4" height="10004" viewBox="0 0 4 10004" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M2 2L2.00041 10002" stroke="var(--text-primary)" stroke-width="3" stroke-linecap="square" stroke-dasharray="12 12"/>
+        <path d="M2 2L2.00041 10002" stroke="var(--text-primary)" stroke-width="2" stroke-linecap="square" stroke-dasharray="8 12"/>
       </svg>
     </div>
   </div>
@@ -94,7 +90,7 @@
                 box-sizing: border-box;
                 padding-inline-end: var(--spacing-4x);
                 content: "→";
-                color: var(--accent-secondary);
+                color: var(--text-accent);
                 font-weight: 700;
               }
             }
@@ -112,6 +108,15 @@
           box-sizing: border-box;
           height: 100%;
           font-style: italic;
+          .panel-quote {
+            font-family: ui-serif, Georgia, serif;
+            color: var(--text-accent);
+            font-size: calc(var(--font-size-xl) * 3);
+            line-height: 1;
+          }
+          p {
+            margin-top: calc(var(--spacing-14x) * -1);
+          }
         }
       }
     }
@@ -158,6 +163,9 @@
         .panel-item {
           flex: 1 1 100%;
         }
+      }
+      .panel-line {
+        left: 16px;
       }
     }
   }

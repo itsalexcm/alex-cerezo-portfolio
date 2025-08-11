@@ -1,38 +1,48 @@
 <template>
   <footer>
     <div class="footer-inner">
-      <p class="text large">© {{ new Date().getFullYear() }} Alex Cerezo</p>
+      <p class="text regular">© {{ new Date().getFullYear() }} Designed, written, and coded by <router-link to="/about" class="text regular menu-link" :class="{ selected: route.path === '/about' }">Alex Cerezo</router-link>.</p>
       <SocialLinks />
     </div>
   </footer>
 </template>
 
 <script setup>
+import { useRoute } from 'vue-router';
 import SocialLinks from './SocialLinks.vue';
+
+const route = useRoute()
 </script>
 
 <style lang="scss">
 footer {
-  padding: var(--spacing-20x) var(--spacing-8x);
+  padding: var(--spacing-30x) var(--spacing-10x) var(--spacing-10x);
   margin: 0 auto;
   width: 100%;
-  max-width: var(--width-page);
+  max-width: var(--width-xl);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  font-size: 1.2rem;
-  letter-spacing: -0.2px;
   .footer-inner {
     width: 100%;
-    padding-top: var(--spacing-16x);
+    padding-top: var(--spacing-10x);
     display: flex;
     justify-content: space-between;
     align-items: center;
     p {
       margin: 0;
-      color: var(--social-color);
+      a {
+        &.menu-link {
+          color: var(--accent-secondary);
+          border-bottom: 1px solid var(--accent-secondary);
+          padding-bottom: var(--spacing-1x);
+          &.selected {
+            border-bottom-color: var(--accent-secondary);
+          }
+        }
+      }
     }
     .social {
       margin: 0;

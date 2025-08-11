@@ -35,7 +35,7 @@ defineProps({
   }
   .thanks {
     p {
-      color: var(--social-color);
+      color: var(--accent-secondary);
     }
   }
   .title-overview {

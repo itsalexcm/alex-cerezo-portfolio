@@ -46,7 +46,7 @@ const activateEffect = () => {
     `;
     setTimeout(() => {
       logo.innerHTML = originalLogo;
-    }, 6000);
+    }, 5000);
   }
 
   setTimeout(() => {

@@ -36,8 +36,8 @@
       margin-bottom: var(--spacing-6x);
       transition: background-color .3s ease;
       svg {
-        width: var(--spacing-10x);
-        height: var(--spacing-10x);
+        width: 30px;
+        height: 30px;
       }
     }
   }

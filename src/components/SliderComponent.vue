@@ -54,7 +54,6 @@ const prev = () => {
   align-items: center;
   gap: 16px;
   width: 100%;
-  // max-width: 800px;
   margin: 0 auto;
 }
 
@@ -82,13 +81,6 @@ const prev = () => {
   border: none;
   font-size: 2rem;
   cursor: pointer;
-}
-
-.caption {
-  color: var(--social-color);
-  width: 100%;
-  text-align: center;
-  margin-top: var(--spacing-4x);
 }
 
 .slide-inner {

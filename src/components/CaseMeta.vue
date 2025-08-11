@@ -33,7 +33,6 @@ defineProps({
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-10x);
-  // margin: var(--spacing-30x) auto;
   margin: var(--spacing-30x) auto 0 auto;
   .meta-item {
     flex: 1 1 250px;
