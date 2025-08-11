@@ -8,11 +8,11 @@
               <img class="case-img" :src="project.thumbnail" :alt="project.title" />
             </div>
             <div class="work-content">
-              <div v-if="project.tags && project.tags.length" class="work-tags">
+              <div v-if="project.tags && project.tags.length" class="case-tags">
                 <span
                   v-for="(tag, i) in project.tags"
                   :key="`tag-${i}`"
-                  class="tag-chip text mini"
+                  class="tag-item text mini"
                 >{{ tag }}</span>
               </div>
               <h3 class="work-title">{{ project.title }}</h3>
@@ -58,21 +58,6 @@ defineProps({
       .work-content {
         flex: 1;
         margin: 0 0 0 var(--spacing-16x);
-        .work-tags {
-          display: flex;
-          flex-wrap: wrap;
-          gap: var(--spacing-2x);
-          margin: 0 0 var(--spacing-5x) 0;
-        }
-        .tag-chip {
-          padding: var(--spacing-2x) var(--spacing-4x);
-          border-radius: var(--spacing-30x);
-          background-color: var(--tag-bg);
-          color: var(--tag-fg);
-          white-space: nowrap;
-          line-height: 1;
-          transition: all .3s ease;
-        }
         .work-title {
           font-size: var(--font-size-lg);
           line-height: var(--line-height-xl);

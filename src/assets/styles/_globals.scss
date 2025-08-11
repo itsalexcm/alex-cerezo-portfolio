@@ -152,6 +152,30 @@ h6 {
     font-weight: var(--font-weight-medium);
   }
 }
+.case-tags {
+  display: flex;
+  gap: var(--spacing-1x);
+  margin: 0 0 var(--spacing-5x) 0;
+}
+.tag-item {
+  padding: var(--spacing-2x) var(--spacing-4x);
+  background-color: var(--tag-bg);
+  color: var(--tag-fg);
+  white-space: nowrap;
+  line-height: 1;
+  transition: all .3s ease;
+  &:first-child {
+    border-bottom-left-radius: var(--spacing-30x);
+    border-top-left-radius: var(--spacing-30x);
+  }
+  &:last-child {
+    border-top-right-radius: var(--spacing-30x);
+    border-bottom-right-radius: var(--spacing-30x);
+  }
+  &:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+}
 ul.list,
 ol.list {
   display: flex;

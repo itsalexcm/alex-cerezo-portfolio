@@ -4,7 +4,7 @@ export default {
   subtitle: "This case study explores how we improved the clarity and usability of Finsit’s dashboard, a tool used by accountants and their clients to visualize financial data.",
   thumbnail: "/assets/imgs/finsit/wk_img_01.png",
   intro: "Improving clarity and usability in Finsit’s financial dashboard.",
-  tags: ["Data Visualization", "Financial", "Product Design"],
+  tags: ["Data", "Financial", "Product Design"],
   components: [
     {
       type: "CaseMedia",

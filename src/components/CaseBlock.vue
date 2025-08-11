@@ -9,11 +9,6 @@
         <div :class="['block-item', block.customWidth || '']">
           <h3 v-if="block.title">{{ block.title }}</h3>
           <p
-            v-if="block.subtitle"
-            class="block-subtitle text regular"
-            v-html="block.subtitle"
-          ></p>
-          <p
             v-for="(txt, i) in block.texts || [block.text]"
             :key="'text-' + i"
             :class="['text regular', block.margin || '']"
@@ -156,24 +151,6 @@ div[id]::before {
           height: auto;
           display: block;
         }
-      }
-      .block-subtitle {
-        margin: var(--spacing-2x) 0 0 0;
-        color: var(--tag-fg, var(--text-secondary));
-        background: var(--tag-bg);
-        display: inline-block;
-        padding: var(--spacing-2x) var(--spacing-4x);
-        border-radius: var(--spacing-30x);
-        font-size: var(--font-size-sm);
-        line-height: 1.2;
-      }
-      .tag-chip {
-        padding: var(--spacing-2x) var(--spacing-4x);
-        border-radius: var(--spacing-30x);
-        background: var(--tag-bg);
-        color: var(--tag-fg);
-        line-height: 1;
-        white-space: nowrap;
       }
     }
   }
