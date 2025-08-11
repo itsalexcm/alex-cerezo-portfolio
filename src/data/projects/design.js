@@ -4,6 +4,7 @@ export default {
   subtitle: "How we built a scalable system to unify 5 brands, streamline workflows, and empower cross-functional product teams.",
   thumbnail: "/assets/imgs/edreams/ed_img_01.png",
   intro: "Unifying 5 brands with a scalable, cross-functional design system.",
+  tags: ["Design System", "Travel", "Design Ops"],
   components: [
     {
       type: "CaseMedia",

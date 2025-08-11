@@ -4,6 +4,7 @@ export default {
   subtitle: "The scheduling experience at Greyfinch was redesigned to make appointment management faster, clearer and less error-prone for clinic staff.",
   thumbnail: "/assets/imgs/greyfinch/gf_img_01.png",
   intro: "Simplified appointment scheduling for clinic staff at Greyfinch.",
+  tags: ["Calendar", "Health", "Product Design"],
   components: [
     {
       type: "CaseMedia",

@@ -5,6 +5,13 @@
   >
     <article class="case">
       <div class="case-top">
+        <div v-if="caseData?.tags && caseData?.tags.length" class="case-tags">
+          <span
+            v-for="(tag, tIdx) in caseData?.tags"
+            :key="'btag-' + tIdx"
+            class="tag-chip text mini"
+          >{{ tag }}</span>
+        </div>
         <h1 class="hero-heading">{{ caseData?.title }}</h1>
         <div class="case-overview">
           <p class="text hero">{{ caseData?.subtitle }}</p>
@@ -84,6 +91,21 @@
     max-width: var(--width-md);
     text-align: center;
     margin: 0 auto var(--spacing-30x) auto;
+    .case-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--spacing-2x);
+      margin: 0 0 var(--spacing-4x) 0;
+      .tag-chip {
+        padding: var(--spacing-2x) var(--spacing-4x);
+        border-radius: var(--spacing-30x);
+        background: var(--tag-bg);
+        color: var(--tag-fg);
+        line-height: 1;
+        white-space: nowrap;
+      }
+    }
     .case-overview {
       margin-top: 40px;
     }

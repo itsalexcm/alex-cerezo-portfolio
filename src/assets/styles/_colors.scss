@@ -18,6 +18,9 @@
 
   --accent-primary: #C8FF00;
   --accent-secondary: #A0A0A0;
+
+  --tag-bg: #F0EBFF;
+  --tag-fg: var(--text-accent);
 }
 [data-theme='dark'] {
   --wb: #1F1F1F;
@@ -33,4 +36,7 @@
 
   --accent-primary: #B8FF00;
   --accent-secondary: #808080;
+
+  --tag-bg: #2B2540;
+  --tag-fg: var(--text-accent);
 }

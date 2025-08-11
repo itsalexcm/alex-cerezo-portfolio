@@ -1,6 +1,5 @@
 <template>
   <div class="work">
-    <!-- <p class="work-label text regular">Work</p> -->
     <ul class="work-list">
       <li v-for="project in projects" :key="project.id">
         <router-link :to="`/work/${project.id}`">
@@ -9,6 +8,13 @@
               <img class="case-img" :src="project.thumbnail" :alt="project.title" />
             </div>
             <div class="work-content">
+              <div v-if="project.tags && project.tags.length" class="work-tags">
+                <span
+                  v-for="(tag, i) in project.tags"
+                  :key="`tag-${i}`"
+                  class="tag-chip text mini"
+                >{{ tag }}</span>
+              </div>
               <h3 class="work-title">{{ project.title }}</h3>
               <p class="work-desc text regular">{{ project.intro }}</p>
               <p class="work-button text regular">Case Study →</p>
@@ -52,6 +58,21 @@ defineProps({
       .work-content {
         flex: 1;
         margin: 0 0 0 var(--spacing-16x);
+        .work-tags {
+          display: flex;
+          flex-wrap: wrap;
+          gap: var(--spacing-2x);
+          margin: 0 0 var(--spacing-5x) 0;
+        }
+        .tag-chip {
+          padding: var(--spacing-2x) var(--spacing-4x);
+          border-radius: var(--spacing-30x);
+          background-color: var(--tag-bg);
+          color: var(--tag-fg);
+          white-space: nowrap;
+          line-height: 1;
+          transition: all .3s ease;
+        }
         .work-title {
           font-size: var(--font-size-lg);
           line-height: var(--line-height-xl);
@@ -60,7 +81,7 @@ defineProps({
           margin-bottom: 0px;
         }
         .work-desc {
-          margin-top: var(--spacing-4x);
+          margin-top: var(--spacing-2x);
         }
         .work-button {
           color: #1A1A1A;
