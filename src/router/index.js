@@ -2,12 +2,12 @@ import { createRouter, createWebHistory } from 'vue-router';
 import { logEvent } from 'firebase/analytics';
 import { analytics } from '@/firebase-config';
 import Home from '../views/HomeView.vue';
-import Profile from '../views/ProfileView.vue';
+import About from '../views/AboutView.vue';
 import Case from '../views/CaseView.vue';
 
 const routes = [
   { path: '/', component: Home, name: 'home', meta: { title: 'Alex Cerezo | Product Designer' } },
-  { path: '/profile', component: Profile, name: 'profile', meta: { title: 'Alex Cerezo | Profile' } },
+  { path: '/about', component: About, name: 'about', meta: { title: 'Alex Cerezo | About' } },
   { path: '/work/:id', component: Case, name: 'case' }
 ];
 

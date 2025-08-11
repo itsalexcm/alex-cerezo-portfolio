@@ -1,9 +1,5 @@
 import calendar from './projects/calendar.js';
+import design from './projects/design.js';
 import dashboard from './projects/dashboard.js';
-import smarterCalendar from './projects/smarter-calendar.js';
-import designSystem from './projects/design-system.js';
-import redesignData from './projects/redesign-data.js';
-import scalingDesign from './projects/scaling-design.js';
-import slackCaseStudy from './projects/slack-case-study.js';
 
-export const projects = [calendar, dashboard, smarterCalendar, designSystem, redesignData, scalingDesign, slackCaseStudy];
+export const projects = [calendar, design, dashboard];

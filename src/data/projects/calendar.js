@@ -2,19 +2,20 @@ export default {
   id: "calendar",
   title: "Simplifying the scheduling process",
   subtitle: "The scheduling experience at Greyfinch was redesigned to make appointment management faster, clearer and less error-prone for clinic staff.",
-  thumbnail: "/assets/imgs/greyfinch/test01.png",
+  thumbnail: "/assets/imgs/greyfinch/gf_img_01.png",
+  intro: "Simplified appointment scheduling for clinic staff at Greyfinch.",
   components: [
     {
       type: "CaseMedia",
       data: {
-        transparent: "yes",
         images: [
           {
-            src: "/assets/imgs/greyfinch/test01.png",
-            alt: "Finsit"
+            src: "/assets/imgs/greyfinch/gf_img_01.png",
+            alt: "Greyfinch calendar"
           }
         ],
-      },
+        caption: "Greyfinch calendar."
+      }
     },
     {
       type: "CaseMeta",
@@ -53,9 +54,9 @@ export default {
             customWidth: "custom-width",
             title: "About Greyfinch",
             text:
-            `Greyfinch is a <span class="bold">Practice Management Software (PMS) for orthodontic clinics</span>, with a core Calendar feature that helps doctors, front-desk, and assistants manage appointments, daily schedules, and chair assignments efficiently.
-            <br /><br />
-            <span class="bold">Improving the scheduling experience</span> became essential, as the calendar sits at the heart of daily operations. Making it faster, clearer, and more reliable directly impacted staff performance and reduced friction.`
+              `<a href="https://greyfinch.com/" target="_blank" class="link">Greyfinch ↗</a> is a <span class="bold">Practice Management Software (PMS)</span> designed primarily for orthodontic clinics. Its platform enables the management of tasks ranging from patient acquisition to appointment scheduling, billing, and communication.
+              <br /><br />
+              At the heart of the platform lies the Calendar—a crucial tool for all three primary user roles: Doctors, Front Desk, and Assistants. It allows users to manage appointments, view daily schedules, and organize doctor chair assignments at a glance.`
           }
         ]
       }
@@ -66,11 +67,11 @@ export default {
         transparent: "yes",
         images: [
           {
-            src: "/assets/imgs/greyfinch/test02.png",
-            alt: "Finsit"
+            src: "/assets/imgs/greyfinch/gf_img_02.png",
+            alt: "Greyfinch PMS"
           }
         ],
-        caption: "Greyfinch PMS"
+        caption: "Greyfinch PMS."
       }
     },
     {
@@ -84,11 +85,11 @@ export default {
             text:
               `The original scheduling flow relied on <span class="bold">two separate panels</span>—one for patient info, another for appointment settings—making the process fragmented, and hard to follow for staff.
               <br /><br />
-              More critically, completing a booking required navigating through disconnected panels, increasing friction and confusion.`
+              <span class="bold">Improving the scheduling experience</span> became essential. Making it faster, clearer, and more reliable directly impacted staff performance and reduced friction.`
           },
           {
             title: "The solution",
-            text: `In under six months, we redesigned the scheduling experience to fix major usability issues and make daily workflows smoother for staff.
+            text: `In under six months, we redesigned the experience to fix major usability issues and make daily workflows smoother for patients and clinics staff.
             <br /><br />
             <span class="bold">I led the effort from discovery to delivery</span>—aligning with stakeholders, running research sessions, shaping design directions, and validating improvements with real users.`
           }
@@ -122,7 +123,10 @@ export default {
       }
     },
     {
-      type: "CaseLine"
+      type: "CaseLine",
+      data: {
+        text: "Hey, what if we look into why we’re getting so many support tickets?"
+      }
     },
     {
       type: "CaseTitle",
@@ -136,11 +140,11 @@ export default {
       data: {
         images: [
           {
-            src: "/assets/imgs/greyfinch/test03.png",
-            alt: "Finsit"
+            src: "/assets/imgs/greyfinch/gf_img_03.png",
+            alt: "Patient info"
           }
         ],
-        caption: "Sidebar scheduling wizard. Step 1/2 (Patient info)"
+        caption: "Sidebar scheduling wizard. Step 1/2 (Patient info)."
       }
     },
     {
@@ -165,11 +169,11 @@ export default {
       data: {
         images: [
           {
-            src: "/assets/imgs/greyfinch/test03B.png",
-            alt: "Typography"
+            src: "/assets/imgs/greyfinch/gf_img_04.png",
+            alt: "Scheduling options"
           }
         ],
-        caption: "Sidebar scheduling wizard. Step 2/2 (Scheduling options)"
+        caption: "Sidebar scheduling wizard. Step 2/2 (Scheduling options)."
       }
     },
     {
@@ -189,7 +193,10 @@ export default {
       }
     },
     {
-      type: "CaseLine"
+      type: "CaseLine",
+      data: {
+        text: "We don’t need to reinvent anything but just bring order to what we already have."
+      }
     },
     {
       type: "CaseTitle",
@@ -201,7 +208,7 @@ export default {
     {
       type: "CaseBlock",
       data: {
-        title: "04. Research and Analysis",
+        title: "04. Research",
         direction: "direction-column",
         content: [
           {
@@ -215,16 +222,16 @@ export default {
             list: [
               `<span class="bold">5 shadowing sessions</span> with front-desk staff.`,
               `<span class="bold">7 – 8 user interviews</span> across different roles.`,
-              // `<span class="bold">A short survey</span> to collect broader input.`,
               `<span class="bold">A competitive benchmark</span> to assess how other platforms approached appointment scheduling.`,
             ]
           },
           {
             panels: [
               {
-                text: `<span class="bold">The options are split between different panels</span>, and sometimes I’m not sure if I’ve completed all the steps correctly.
-                <br/><br/>
-                <span class="bold">Front-desk staff</span>`
+                text:
+                  `<span class="bold">The options are split between different panels</span>, and sometimes I’m not sure if I’ve completed all the steps correctly.
+                  <br/><br/>
+                  <span class="bold">Front-desk staff</span>`
               }
             ],
             panelStyle: "zeta"
@@ -266,8 +273,8 @@ export default {
       data: {
         images: [
           {
-            src: "/assets/imgs/greyfinch/test10.png",
-            alt: "Finsit"
+            src: "/assets/imgs/greyfinch/gf_img_05.png",
+            alt: "User journey"
           }
         ],
         caption: "User journey."
@@ -276,7 +283,7 @@ export default {
     {
       type: "CaseBlock",
       data: {
-        title: "05. Ideation & Exploration",
+        title: "05. Ideation",
         content: [
           {
             customWidth: "custom-width",
@@ -295,12 +302,12 @@ export default {
         layout: "wrap",
         images: [
           {
-            src: "/assets/imgs/greyfinch/test09A.png",
-            alt: "Typography"
+            src: "/assets/imgs/greyfinch/gf_img_06.png",
+            alt: "Old structure"
           },
           {
-            src: "/assets/imgs/greyfinch/test09B.png",
-            alt: "Iconography"
+            src: "/assets/imgs/greyfinch/gf_img_07.png",
+            alt: "Old structure"
           }
         ],
         caption: "Old structure. 2 sidebars."
@@ -313,7 +320,7 @@ export default {
         content: [
           {
             customWidth: "custom-width",
-            text: `In contrast, the redesigned sidebar <span class="bold">l necessary actions into a single, streamlined wizard</span>. This new structure reduced ambiguity, improved visibility of key information, and created a more linear and confident scheduling flow for users across roles.`
+            text: `In contrast, the redesigned sidebar <span class="bold"> combined all necessary actions into a single, streamlined wizard</span>. This new structure reduced ambiguity, improved visibility of key information, and created a more linear and confident scheduling flow for users.`
           }
         ]
       }
@@ -324,37 +331,21 @@ export default {
         layout: "wrap",
         images: [
           {
-            src: "/assets/imgs/greyfinch/test09C.png",
-            alt: "Typography"
+            src: "/assets/imgs/greyfinch/gf_img_08.png",
+            alt: "New structure"
           },
           {
-            src: "/assets/imgs/greyfinch/test09D.png",
-            alt: "Iconography"
+            src: "/assets/imgs/greyfinch/gf_img_09.png",
+            alt: "New structure"
           }
         ],
         caption: "New structure. 1 wizard sidebar."
       }
     },
-    // {
-    //   type: 'SliderComponent',
-    //   data: {
-    //     images: [
-    //       {
-    //         src: "/assets/imgs/greyfinch/test09C.png",
-    //         alt: "Iconography"
-    //       },
-    //       {
-    //         src: "/assets/imgs/greyfinch/test09D.png",
-    //         alt: "Iconography"
-    //       }
-    //     ],
-    //     caption: "Before"
-    //   }
-    // },
     {
       type: "CaseBlock",
       data: {
-        title: "06. Exploring solutions",
+        title: "06. Exploring",
         content: [
           {
             customWidth: "custom-width",
@@ -369,13 +360,13 @@ export default {
       type: 'CarouselComponent',
       data: {
         images: [
-          { src: '/assets/imgs/greyfinch/carousel01.png', alt: 'Image 1' },
-          { src: '/assets/imgs/greyfinch/carousel02.png', alt: 'Image 2' },
-          { src: '/assets/imgs/greyfinch/carousel03.png', alt: 'Image 3' },
-          { src: '/assets/imgs/greyfinch/carousel04.png', alt: 'Image 4' },
-          { src: '/assets/imgs/greyfinch/carousel05.png', alt: 'Image 5' },
-          { src: '/assets/imgs/greyfinch/carousel06.png', alt: 'Image 6' },
-          { src: '/assets/imgs/greyfinch/carousel07.png', alt: 'Image 7' }
+          { src: '/assets/imgs/greyfinch/gf_carousel_01.png', alt: 'Image 01' },
+          { src: '/assets/imgs/greyfinch/gf_carousel_02.png', alt: 'Image 02' },
+          { src: '/assets/imgs/greyfinch/gf_carousel_03.png', alt: 'Image 03' },
+          { src: '/assets/imgs/greyfinch/gf_carousel_04.png', alt: 'Image 04' },
+          { src: '/assets/imgs/greyfinch/gf_carousel_05.png', alt: 'Image 05' },
+          { src: '/assets/imgs/greyfinch/gf_carousel_06.png', alt: 'Image 06' },
+          { src: '/assets/imgs/greyfinch/gf_carousel_07.png', alt: 'Image 07' }
         ]
       }
     },
@@ -406,7 +397,8 @@ export default {
         content: [
           {
             image:  {
-              src: "/assets/imgs/greyfinch/test05.png",
+              src: "/assets/imgs/greyfinch/gf_img_10.png",
+              alt: "Patient",
               class: "case-img-inline"
             }
           },
@@ -430,7 +422,8 @@ export default {
         content: [
           {
             image:  {
-              src: "/assets/imgs/greyfinch/test06.png",
+              src: "/assets/imgs/greyfinch/gf_img_11.png",
+              alt: "Scheduling",
               class: "case-img-inline"
             }
           },
@@ -446,30 +439,6 @@ export default {
         ]
       }
     },
-    // {
-    //   type: "CaseBlock",
-    //   data: {        
-    //     direction: "direction-column",
-    //     alignContent: "align-center",
-    //     content: [
-    //       {
-    //         panels: [
-    //           {
-    //             label: "New Appt. (Existing Patient)",
-    //             text: "Combines patient data and scheduling inputs to speed up appointment creation."
-    //           }
-    //         ],
-    //         panelStyle: "alpha"
-    //       },
-    //       {
-    //         image:  {
-    //           src: "/assets/imgs/greyfinch/test07.png",
-    //           class: "case-img-inline"
-    //         }
-    //       }
-    //     ]
-    //   }
-    // },
     {
       type: "CaseBlock",
       data: {
@@ -478,11 +447,24 @@ export default {
           {
             customWidth: "custom-width",
             title: "Early feedback on core concepts",
-            text: `I created a prototype ranging from wireframes to near-final UI states. Each iteration was designed to test a specific part of the experience, from layout hierarchy to interaction logic. And to evaluate clarity, speed, and ease of use.
-            <br /><br />
-            <span class="bold">We tested the redesign</span> with front-desk staff, doctors, and new users. Creating, editing, and rescheduling tasks showed the sidebar improved speed and reduced errors. Minor issues were addressed before launch.`
+            text:
+              `I created a prototype ranging from wireframes to near-final UI states. Each iteration was designed to test a specific part of the experience, from layout hierarchy to interaction logic. And to evaluate clarity, speed, and ease of use.
+              <br /><br />
+              <span class="bold">We tested the redesign</span> with front-desk staff, doctors, and new users. Creating, editing, and rescheduling tasks showed the sidebar improved speed and reduced errors. Minor issues were addressed before launch.`
           }
         ]
+      }
+    },
+    {
+      type: "CaseMedia",
+      data: {
+        images: [
+          {
+            src: "/assets/imgs/greyfinch/gf_img_12.png",
+            alt: "Greyfinch calendar"
+          }
+        ],
+        caption: "Full view of the calendar."
       }
     },
     {
@@ -505,7 +487,7 @@ export default {
           },
           {
             title: "From friction to focus",
-            text: `This project underscored the value of clarity over complexity. Small design tweaks drove meaningful gains in efficiency and confidence.
+            text: `The project underscored the value of clarity over complexity. Small design tweaks drove meaningful gains in efficiency and confidence.
             <br /><br />
             Building on past audits and support insights helped us move fast without sacrificing quality. Close collaboration with engineering ensured scalable, realistic implementation.`
 
@@ -514,12 +496,10 @@ export default {
       }
     },
     {
-      type: "CaseLine"
-    },
-    {
-      type: "CaseTitle",
+      type: "CaseLine",
       data: {
-        thanks: "Thanks to Alfre, Neil, Garvan, Darío, Jake and the rest of the team."
+        text: "Sometimes the best improvement is making everything feel easier than it really is.",
+        author: "Scheduling mantra"
       }
     }
   ]
