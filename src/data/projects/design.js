@@ -290,9 +290,13 @@ export default {
           {
             src: '/assets/imgs/edreams/ed_img_06.png',
             alt: 'Storybook'
+          },
+          {
+            src: '/assets/imgs/edreams/ed_img_07.png',
+            alt: 'Accessibility'
           }
         ],
-        caption: "Storybook."
+        caption: "Accessibility was a key focus."
       }
     },
     {
