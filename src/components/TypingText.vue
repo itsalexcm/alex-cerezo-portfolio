@@ -13,25 +13,25 @@ const { text, cursorVisible } = useTyping();
   
 <style lang="scss">
 .hi-there {
-  height: var(--line-height-extralarge);
+  height: 46px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: var(--spacing-2x);
     .typing,
     .cursor {
-      min-height: var(--line-height-extralarge);
-      font-family: 'CircularStd', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      font-weight: 700;
+      min-height: 46px;
       white-space: nowrap;
       overflow: hidden;
       display: inline-block;
-      font-size: var(--font-size-hero);
-      line-height: var(--line-height-extralarge);
+      font-size: 36px;
+      line-height: 46px;
+      font-weight: var(--font-weight-bold);     
     }
     .cursor {
       animation: blink 1s infinite;
 			margin-top: -3px;
+      font-weight: var(--font-weight-medium);
     }
 }
 @keyframes blink {

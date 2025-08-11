@@ -5,8 +5,8 @@
     :subtitle="subtitle"
     :caseData="caseData"
   />
-  <main>
-    <div class="fade-in">
+  <main :data-project="caseData?.id">
+    <div class="fade-in" :key="route.fullPath">
       <slot />
     </div>
   </main>
@@ -14,6 +14,7 @@
 </template>
 
 <script setup>
+import { useRoute } from 'vue-router'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 
@@ -23,19 +24,14 @@ defineProps({
   subtitle: String,
   caseData: Object
 })
+const route = useRoute()
 </script>
 
 <style lang="scss">
 main {
-	width: 100%;
-  max-width: var(--width-page);
-	box-sizing: border-box;
-	padding: calc(var(--spacing-20x) + var(--spacing-10x)) var(--spacing-8x);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	font-size: var(--font-size-base);
-	line-height: var(--line-height-base);
+  width: 100%;
+  max-width: var(--width-xl);
+  box-sizing: border-box;
+  padding: var(--spacing-20x) var(--spacing-10x);
 }
 </style>

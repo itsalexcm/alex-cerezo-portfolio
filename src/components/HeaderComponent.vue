@@ -1,115 +1,119 @@
 <template>
-  <div class="case-header" v-if="isCaseView">
-    <section class="fade-in">
-      <div class="case-header-container">
-        <header>
-          <HeaderBrand />
-          <MenuComponent />
-        </header>
-        <div class="case-title">
-          <h1>{{ title }}</h1>
-          <p class="text large">{{ subtitle }}</p>
-        </div>
+  <header>
+    <div class="header-container">
+      <div class="alex">
+        <h1>Alex Cerezo 👋</h1>
+        <router-link to="/">
+          <LogoComponent />
+        </router-link>
       </div>
-      <CaseSummary :caseData="caseData" />
-    </section>
-  </div>
-  <header v-else>
-    <HeaderBrand />
-    <MenuComponent />
+      <menu>
+        <ul>
+          <li>
+            <router-link
+              to="/"
+              class="text regular menu-link"
+              :class="{ selected: route.path === '/' || route.path.startsWith('/work/') }"
+            >
+              Work
+            </router-link>
+          </li>
+          <li>
+            <router-link
+              to="/about"
+              class="text regular menu-link"
+              :class="{ selected: route.path === '/about' }"
+            >
+              About
+            </router-link>
+          </li>
+        </ul>
+        <div class="menu-toggle">
+          <ThemeToggle />
+        </div>
+      </menu>
+    </div>
   </header>
 </template>
 
 <script setup>
-import { computed } from 'vue';
-import { useRoute } from 'vue-router';
-import HeaderBrand from './HeaderBrand.vue';
-import MenuComponent from './MenuComponent.vue';
-import CaseSummary from './CaseSummary.vue';
+  import { useRoute } from 'vue-router';
+  import LogoComponent from '@/components/LogoComponent.vue';
+  import ThemeToggle from '@/components/ThemeToggle.vue';
 
-const route = useRoute();
-const isCaseView = computed(() => route.name === 'case');
-
-defineProps({
-  isCaseView: Boolean,
-  title: String,
-  subtitle: String,
-  caseData: Object
-})
+  const route = useRoute();
 </script>
 
 <style lang="scss">
-.case-header {
-  width: 100%;
-  height: auto;
-  .case-header-container {
-    width: 100%;
+  header {
+    position: sticky;
+    top: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--header-color);
-    transition: background-color 0.3s ease;
-    .case-title {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    justify-content: center;
+    box-sizing: border-box;
+    z-index: 9999;
+    width: 100%;
+    padding: var(--spacing-10x) 0;
+    transition: background-color .3s ease;
+    .header-container {
       width: 100%;
-      max-width: var(--width-page);
-      margin-bottom: var(--spacing-12x);
+      display: flex;
+      justify-content: space-between;
       box-sizing: border-box;
-      padding: calc(var(--spacing-20x) + var(--spacing-20x)) var(--spacing-8x) 0 var(--spacing-8x);
+      max-width: var(--width-xl);
+      padding: 0 var(--spacing-10x);
+      menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--spacing-6x);
+        padding: 0;
+        margin: 0;
+        cursor: default;
+        ul {
+          display: flex;
+          align-items: center;
+          gap: var(--spacing-6x);
+          margin: 3px 0 0 0;
+          padding: 0;
+          .menu-link {
+            color: var(--text-primary);
+            border-bottom: 1px solid transparent;
+            padding-bottom: var(--spacing-1x);
+            &.selected {
+              border-bottom-color: var(--text-primary);
+            }
+          }
+        }
+        .menu-toggle {
+          width: 40px;
+          height: 40px;
+          background-color: var(--bg-secondary);
+          border-radius: 40px;
+          transition: background-color .3s ease;
+        }
+      }
+    }
+    .alex {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: var(--spacing-4x);
       h1 {
-        margin-bottom: var(--spacing-2x);
+        color: transparent;
+        line-height: 1;
+        &::selection {
+          color: #1A1A1A;
+        }
       }
     }
   }
-}
-header {
-  width: 100%;
-  max-width: var(--width-page);
-  padding: var(--spacing-20x) var(--spacing-8x) 0 var(--spacing-8x);
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-base);
-  menu {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-4x);
-    margin: 0;
-    padding: 0;
-    .menu-link {
-      color: var(--text-color);
-      border-bottom: 1px solid var(--text-color);
-      padding-bottom: 2px;
+  @media (max-width: 720px) {
+    .alex {
+      h1 {
+        font-size: var(--font-size-lg);
+        line-height: var(--line-height-md);
+      }
     }
   }
-}
-.alex {
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
-	gap: var(--spacing-4x);
-	h1 {
-		color: transparent;
-		line-height: var(--line-height-medium);
-		&::selection {
-			background-color: var(--selection-bg-color);
-			color: var(--selection-color);
-		}
-	}
-}
-@media (max-width: 720px) {
-  header {
-    padding-bottom: var(--spacing-6x);
-  }
-	.alex {
-		h1 {
-			font-size: var(--font-size-large);
-			line-height: var(--line-height-medium);
-		}
-	}
-}
 </style>
