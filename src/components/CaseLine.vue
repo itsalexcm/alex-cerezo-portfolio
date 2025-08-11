@@ -25,6 +25,7 @@ const props = defineProps({
     width: 80px;
     height: 5px;
     background-color: var(--text-primary);
+    transition: background-color .3s ease;
   }
 }
 

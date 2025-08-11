@@ -44,7 +44,6 @@ defineProps({
       color: var(--text-primary);
       .work-thumbnail {
         flex: 2;
-        background-color: var(--bg-primary);
         border-radius: var(--spacing-4x);
         .case-img {
           object-fit: cover;
