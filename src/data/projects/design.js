@@ -42,7 +42,7 @@ export default {
           },
           {
             label: "Tools",
-            text: "Figma, VS Code, Storybook, Google Spreadsheet, Google Slides, Miro, Slack"
+            text: "Sketch/Figma, VS Code, Storybook, Google Spreadsheet, Google Slides, Miro, Slack"
           }
         ]
       }
@@ -192,7 +192,7 @@ export default {
             customWidth: "custom-width",
             title: "Standardizing the essentials",
             text:
-              `<span class="bold">Design tokens were our first focus</span>—and our biggest challenge. A full UI audit revealed mismatched components and inconsistencies in typography, color, spacing, and iconography across the product.
+              `<span class="bold">Design tokens were our first focus</span>—and our biggest challenge. I made a full UI audit that revealed mismatched components and inconsistencies in typography, color, spacing, and iconography across the product.
               <br /><br />
               <span class="bold">One of the most complex parts was color</span>. Supporting 5 brands, each with its own palette, created a messy and fragmented experience. After analyzing nearly 70 unique colors, we reduced them by half—while maintaining brand integrity.
               <br /><br />`,

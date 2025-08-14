@@ -3,7 +3,7 @@
     <div class="intro">
       <TypingText />
       <p class="text regular">
-        I'm Alex Cerezo. Product Designer with 10+ years of experience solving real user problems and business needs through digital products. Based in Spain.
+        I’m Alex Cerezo, a Product Designer focused on solving real user problems and business needs through impactful digital products. Based in Spain.
       </p>
       <SocialLinks />
     </div>

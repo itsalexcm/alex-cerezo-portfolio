@@ -10,7 +10,7 @@
           <br /><br />
           I’m passionate about solving complex problems with creativity and empathy—from enhancing user experiences to exploring emerging technologies. I strive to create environments where people feel valued and can grow together.
           <br /><br />
-          Outside work I enjoy playing and studying video games, chasing a flying disc in Ultimate Frisbee tournaments, and traveling as much as I can.
+          Outside work I enjoy chasing a flying disc in Ultimate Frisbee tournaments, staying active through sports and outdoor activities, and traveling as much as I can.
         </p>
       </div>
     </div>

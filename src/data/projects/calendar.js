@@ -1,9 +1,9 @@
 export default {
   id: "calendar",
   title: "Simplifying the scheduling process",
-  subtitle: "The scheduling experience at Greyfinch was redesigned to make appointment management faster, clearer and less error-prone for clinic staff.",
+  subtitle: "The scheduling experience at Greyfinch was redesigned to make appointment management faster, clearer, and more reliable for clinic staff.",
   thumbnail: "/assets/imgs/greyfinch/gf_img_01.png",
-  intro: "Simplified appointment scheduling for clinic staff at Greyfinch.",
+  intro: "Streamlined appointment scheduling for clinic staff at Greyfinch.",
   tags: ["Calendar", "Health", "Product Design"],
   components: [
     {
@@ -24,7 +24,7 @@ export default {
         content: [
           {
             label: "My Role",
-            text: "Lead Product Designer — Research, Interaction Design, Visual Design, User Flows, Design System, Prototyping"
+            text: "Lead Product Designer — Research, Interaction Design, Visual Design, User Journey, Design System, Prototyping"
           },
           {
             label: "Team",
@@ -57,7 +57,7 @@ export default {
             text:
               `<a href="https://greyfinch.com/" target="_blank" class="link">Greyfinch ↗</a> is a <span class="bold">Practice Management Software (PMS)</span> designed primarily for orthodontic clinics. Its platform enables the management of tasks ranging from patient acquisition to appointment scheduling, billing, and communication.
               <br /><br />
-              At the heart of the platform lies the Calendar—a crucial tool for all three primary user roles: Doctors, Front Desk, and Assistants. It allows users to manage appointments, view daily schedules, and organize doctor chair assignments at a glance.`
+              At the heart of the platform lies the Calendar—a crucial tool for all three primary user roles: doctors, front-desk, and assistants. It allows users to manage appointments, view daily schedules, and organize doctor chair assignments at a glance.`
           }
         ]
       }
@@ -84,13 +84,13 @@ export default {
           {
             title: "The problem",
             text:
-              `The original scheduling flow relied on <span class="bold">two separate panels</span>—one for patient info, another for appointment settings—making the process fragmented, and hard to follow for staff.
+              `<span class="bold">A spike in support tickets</span> related to the calendar revealed flaws in the scheduling flow. Improving speed, clarity, and reliability became essential to boost staff performance.
               <br /><br />
-              <span class="bold">Improving the scheduling experience</span> became essential. Making it faster, clearer, and more reliable directly impacted staff performance and reduced friction.`
+              The original scheduling flow relied on <span class="bold">two separate panels</span>—one for patient info, another for appointment settings—making the process fragmented, and hard to follow for staff.`
           },
           {
             title: "The solution",
-            text: `In under six months, we redesigned the experience to fix major usability issues and make daily workflows smoother for patients and clinics staff.
+            text: `In under 6 months, we redesigned the experience to fix major usability issues and make daily workflows smoother for clinics staff.
             <br /><br />
             <span class="bold">I led the effort from discovery to delivery</span>—aligning with stakeholders, running research sessions, shaping design directions, and validating improvements with real users.`
           }
@@ -158,7 +158,7 @@ export default {
             listType: "ol",
             start: 1,
             list: [
-              `<span class="bold">Grouping Next and Completed appointments</span>: Appointments were split into upcoming and past, making schedules easier to scan.`,
+              `<span class="bold">Next and Completed appointments</span>: Appointments were split into upcoming and past, making schedules easier to scan.`,
               `<span class="bold">Detailed patient information</span>: Key patient info was added to the flow, removing the need to switch sidebars.`
             ]
           }
@@ -248,7 +248,7 @@ export default {
           {
             customWidth: "custom-width",
             title: "Focusing on what matters",
-            text: `We captured all findings in a shared spreadsheet, organized by product areas—especially the Schedule. <span class="bold">I also mapped the scheduling journey</span> to pinpoint delays and friction.
+            text: `I captured all findings in a shared spreadsheet, organized by product areas—especially the Schedule. <span class="bold">I also mapped the scheduling journey</span> to pinpoint delays and friction.
             <br /><br />
             Then, we used effort–value analysis to help us <span class="bold">prioritize quick wins and high-impact fixes</span> aligned with both user needs and business goals.
             <br /><br />`
@@ -380,7 +380,9 @@ export default {
             customWidth: "custom-width",
             title: "A refined interface",
             text:
-              `After several iterations, the final design brought <span class="bold">clarity to core scheduling actions</span>. Key views were simplified, context stayed visible, and the layout adapted smoothly—whether reviewing info, editing, or creating appointments:
+              `Collaboration with engineers was constant from the start to ensure feasibility, as the calendar was a technically complex feature.
+              <br /><br />
+              The final design clarified <span class="bold">core scheduling actions</span>. A concise 2-step sidebar guides staff from patient details to scheduling, with clear context throughout:
               <br /><br />`,
             list: [
               `<span class="bold">Patient</span> shows key details at a glance.`,
