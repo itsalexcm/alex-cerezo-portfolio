@@ -1,5 +1,8 @@
 <template>
   <div class="about">
+    <div class="about-picture">
+      <img src="/assets/imgs/about/alex.png" alt="Alex Cerezo">
+    </div>
     <div class="about-alex">
       <div class="about-content">
         <p class="about-title">
@@ -21,13 +24,14 @@
 .about {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: var(--spacing-10x);
-  margin-top: var(--spacing-10x);
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-16x);
   .about-alex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: var(--width-sm);
     gap: var(--spacing-10x);
     .about-content {
       max-width: var(--width-sm);
@@ -36,6 +40,23 @@
         line-height: 46px;
         font-weight: var(--font-weight-bold);
         margin-bottom: var(--spacing-10x);
+      }
+    }
+  }
+  .about-picture {
+    img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 80px 0px 80px 0px;
+    }
+  }
+}
+@media (max-width: 720px) {
+  .about {
+    flex-direction: column;
+    .about-picture {
+      img {
+        max-width: 100%;
       }
     }
   }
