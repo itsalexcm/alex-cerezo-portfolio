@@ -8,6 +8,11 @@
       <SocialLinks />
     </div>
     <ProjectList :projects="projects" />
+    <div class="past-link">
+      <router-link to="/past-work">
+        <p class="text-link text regular">Past work →</p>
+      </router-link>
+    </div>
   </LayoutComponent>
 </template>
 
@@ -32,6 +37,12 @@ import SocialLinks from '@/components/SocialLinks.vue'
     font-size: var(--font-size-lg);
     line-height: var(--line-height-xl);
     font-weight: var(--font-weight-regular);
+  }
+}
+.past-link {
+  margin-top: var(--spacing-20x);
+  a {
+    display: inline-block;
   }
 }
 </style>
