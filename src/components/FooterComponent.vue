@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="footer-inner">
-      <p class="text regular">© {{ new Date().getFullYear() }} Designed, written, and coded by <router-link to="/about" class="text regular menu-link" :class="{ selected: route.path === '/about' }">Alex Cerezo</router-link>.</p>
+      <p class="text regular">© {{ new Date().getFullYear() }} Designed, written, and coded by <router-link to="/about" class="text regular menu-link" :class="{ selected: route.path === '/about' }">Alex Cerezo</router-link></p>
       <SocialLinks />
     </div>
   </footer>

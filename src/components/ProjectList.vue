@@ -17,7 +17,7 @@
               </div>
               <h3 class="work-title">{{ project.title }}</h3>
               <p class="work-desc text regular">{{ project.intro }}</p>
-              <p class="work-button text regular">Case Study →</p>
+              <p class="work-button text regular">Case study →</p>
             </div>
           </div>
         </router-link>

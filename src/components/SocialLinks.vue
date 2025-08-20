@@ -1,8 +1,6 @@
 <template>
   <div class="social">
     <a href="mailto:hello.alexcerezo@gmail.com" class="social-link text regular">hello.alexcerezo@gmail.com ↗</a>
-    <!-- <span class="text large">·</span>
-    <a href="https://twitter.com/itsalexcm" class="social-link text regular">Twitter</a> -->
     <span class="text large">·</span>
     <a href="https://www.linkedin.com/in/alexcerezo/" class="social-link text regular">Linkedin</a>
   </div>

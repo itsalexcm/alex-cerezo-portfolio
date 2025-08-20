@@ -37,9 +37,9 @@ a {
   text-decoration: none;
 }
 .text-link {
-  color: var(--social-color);
-  border-bottom: 1px solid var(--social-color);
-  padding-bottom: 2px;
+  color: var(--accent-secondary);
+  border-bottom: 1px solid var(--accent-secondary);
+  padding-bottom: var(--spacing-1x);
 }
 p {
   margin: 0;
