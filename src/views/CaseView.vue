@@ -46,7 +46,7 @@
 </template>
 
 <script setup>
-  import { computed, onMounted } from 'vue'
+  import { computed, onMounted, watch } from 'vue'
   import { useRoute } from 'vue-router'
   import { projects } from '@/data/projects.js'
   import LayoutComponent from '@/components/LayoutComponent.vue'
@@ -82,6 +82,19 @@
   onMounted(() => {
     initImageZoom()
   })
+
+  // Re-init image zoom when navigating between cases in the same component instance
+  watch(
+    () => route.params.id,
+    () => {
+      // Close any open fullscreen overlays when navigating
+      document.querySelectorAll('.case-img-fullscreen').forEach(overlay => overlay.remove());
+      document.querySelectorAll('.case-img.hidden').forEach(img => img.classList.remove('hidden'));
+
+      // Give Vue a tick to render new DOM before binding
+      requestAnimationFrame(() => initImageZoom());
+    }
+  );
 </script>
 
 <style lang="scss">

@@ -1,7 +1,12 @@
 export function initImageZoom() {
   document.querySelectorAll('.case-img').forEach(caseImg => {
+    // Prevent rebinding if already initialized for this element
+    if (caseImg.dataset.zoomBound === 'true') return;
     const button = caseImg.querySelector('button');
     if (!button) return;
+
+    // Mark as bound
+    caseImg.dataset.zoomBound = 'true';
 
     button.addEventListener('click', function () {
       const rect = caseImg.getBoundingClientRect();
