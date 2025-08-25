@@ -3,7 +3,7 @@ export default {
   title: "Improving the dashboard experience",
   subtitle: "This case study explores how we improved the clarity and usability of Finsit’s dashboard, a tool used by accountants and their clients to visualize financial data.",
   thumbnail: "/assets/imgs/finsit/wk_img_01.png",
-  intro: "Improving clarity and usability in Finsit’s financial dashboard.",
+  intro: "Making Finsit’s financial data easier to explore and understand.",
   tags: ["Data", "Financial", "Product Design"],
   components: [
     {
@@ -24,7 +24,7 @@ export default {
         content: [
           {
             label: "My Role",
-            text: "Lead Product Designer — Research, Interaction Design, Visual Design, Design System, Prototyping"
+            text: "Lead Product Designer · Research, IA, Interaction Design, Visual Design, User Journey, Design System, Prototyping, User Testing"
           },
           {
             label: "Team",
@@ -116,7 +116,7 @@ export default {
               },
               {
                 label: "Design",
-                text: `<span class="bold">Identified main opportunities</span>, built prototypes, and refined them through testing.`
+                text: `<span class="bold">Identified main opportunities</span>, explored solutions, and iterated through testing.`
               },
               {
                 label: "Handoff",
@@ -165,7 +165,7 @@ export default {
       type: "CaseTitle",
       data: {
         title: "From data to clarity",
-        text: "We redesigned the dashboard layout and visuals to help users focus on what matters most, removing noise and surfacing insights more intuitively."
+        text: "We introduced small but meaningful improvements to the dashboard to help users focus on what matters, reducing visual noise and making insights easier to spot."
       }
     },
     {
@@ -233,7 +233,7 @@ export default {
     {
       type: "CaseLine",
       data: {
-        text: "Clarity isn’t about adding more explanations—it’s about removing the need for them.",
+        text: "Clarity isn’t about adding more explanations, but removing the need for them.",
         author: "Design notes"
       }
     },
@@ -241,7 +241,7 @@ export default {
       type: "CaseTitle",
       data: {
         title: "How I got there",
-        text: "Each step—from research to final visuals—was carefully designed to make Finsit’s dashboard clearer, more focused, and easier to use."
+        text: "From research to final visuals, every decision aimed to make the dashboard more intuitive and less overwhelming."
       }
     },
     {
@@ -362,7 +362,7 @@ export default {
             customWidth: "custom-width",
             title: "Testing the vision",
             text:
-              `To ensure the redesign would succeed in both usability and adoption, <span class="bold">I led a full validation cycle</span>—designing test plans, running sessions with end users, and aligning stakeholders— to identify risks and refine the product before rollout.
+              `To ensure the redesign would succeed in both usability and adoption, <span class="bold">I led a full validation cycle</span> to refine the product before rollout: designing test plans, running sessions with end users, and aligning stakeholders.
               <br /><br />`,
             listType: "ul",
             list: [

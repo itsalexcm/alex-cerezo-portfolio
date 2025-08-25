@@ -24,7 +24,7 @@ export default {
         content: [
           {
             label: "My Role",
-            text: "UX Engineer — Design Tokens, Components, UI Library, Prototyping, Accessibility, Frontend Integration"
+            text: "UX Engineer · Design Tokens, Component Library, Prototyping, Accessibility, Frontend Integration"
           },
           {
             label: "Team",
@@ -56,7 +56,7 @@ export default {
             customWidth: "custom-width",
             title: "Welcome to eDO",
             text:
-              `<a href="https://www.edreams.com/" target="_blank" class="link">eDreams ODIGEO ↗</a> is <span class="bold">one of the world’s largest online travel agencies</span>, operating 5 brands—eDreams, Go Voyages, Opodo, Travellink, and Liligo. It serves millions of travelers yearly, using technology to simplify trip planning and booking.
+              `<a href="https://www.edreams.com/" target="_blank" class="link">eDreams ODIGEO ↗</a> is <span class="bold">one of the world’s largest online travel agencies</span>, operating 5 brands: eDreams, Go Voyages, Opodo, Travellink, and Liligo. It serves millions of travelers yearly, using technology to simplify trip planning and booking.
               <br /><br />
               With a product organization spanning over <span class="bold">20 designers</span>, <span class="bold">60 engineers</span> and many UX researchers and writers, consistency and efficiency were becoming harder to maintain as the platform evolved.`
           }
@@ -92,7 +92,7 @@ export default {
             panels: [
               {
                 label: "Visual Consistency",
-                text: "Align core visuals—colors, typography, etc—while keeping each brand unique."
+                text: "Align core visuals (colors, typography, etc) while keeping each brand unique."
               },
               {
                 label: "Design and dev efficiency",
@@ -144,7 +144,7 @@ export default {
       type: "CaseTitle",
       data: {
         title: "Designing with purpose and precision",
-        text: "Here’s how we approached the challenge—standardizing tokens, aligning across teams, and scaling the system methodically."
+        text: "Here’s how we approached the challenge, standardizing tokens, aligning across teams, and scaling the system methodically."
       }
     },
     {
@@ -178,7 +178,7 @@ export default {
               "Between product teams (design and dev).",
               "Across the entire organization."
             ],
-            textAfterList: `<br />Securing buy-in was one of the toughest parts. Since Design Systems show value over time, <span class="bold">I had to invest in ongoing evangelization</span>—workshops, meetings, and internal presentations helped align teams and build momentum.`
+            textAfterList: `<br />Securing buy-in was one of the toughest parts. Since design systems show value over time, <span class="bold">I had to invest in ongoing evangelization</span>: workshops, meetings, and internal presentations helped align teams and build momentum.`
           }
         ]
       }
@@ -192,9 +192,9 @@ export default {
             customWidth: "custom-width",
             title: "Standardizing the essentials",
             text:
-              `<span class="bold">Design tokens were our first focus</span>—and our biggest challenge. I made a full UI audit that revealed mismatched components and inconsistencies in typography, color, spacing, and iconography across the product.
+              `<span class="bold">Design tokens were our first focus</span> and our biggest challenge. I made a full UI audit that revealed mismatched components and inconsistencies in typography, color, spacing, and iconography across the product.
               <br /><br />
-              <span class="bold">One of the most complex parts was color</span>. Supporting 5 brands, each with its own palette, created a messy and fragmented experience. After analyzing nearly 70 unique colors, we reduced them by half—while maintaining brand integrity.
+              <span class="bold">One of the most complex parts was color</span>. Supporting 5 brands, each with its own palette, created a messy and fragmented experience. After analyzing nearly 70 unique colors, we reduced them by half while maintaining brand integrity.
               <br /><br />`,
             listType: "ul",
             list: [
@@ -222,7 +222,7 @@ export default {
             alt: "Iconography examples from the system"
           }
         ],
-        caption: "Foundations are the core elements of every Design System."
+        caption: "Foundations are the core elements of every design system."
       }
     },
     {
@@ -247,7 +247,7 @@ export default {
             customWidth: "custom-width",
             title: "Systematizing the UI",
             text:
-              `Once tokens were in place, we moved on to components. We built a library of shared elements covering core needs—<span class="bold">buttons, inputs, modals, navigation, and more</span>.
+              `Once tokens were in place, we moved on to components. We built a library of shared elements covering core needs: <span class="bold">buttons, inputs, modals, navigation, and more</span>.
               <br /><br />
               We kept each component brand-aware, responsive, and accessible by default. Collaboration with engineers was constant to ensure feasibility and alignment with dev practices.`
           }
@@ -277,9 +277,9 @@ export default {
             text:
               `To ensure teams could actually use the system, <span class="bold">I ran onboarding sessions for designers and engineers</span>, created clear documentation in Storybook, and embedded system leads into squads to offer real-time help.
               <br /><br />
-              Adoption grew steadily as teams saw the benefits—less friction, faster iteration, fewer inconsistencies. <span class="bold">A major win came when a skeptical team used the system for a key launch</span> and delivered 30% faster.
+              Adoption grew steadily as teams saw the benefits: less friction, faster iteration, fewer inconsistencies. <span class="bold">A major win came when a skeptical team used the system for a key launch</span> and delivered 30% faster.
               <br /><br />
-              Evangelizing the system required consistent effort—workshops, internal presentations, and hands-on support helped teams gradually adopt the new standards.`
+              Evangelizing the system required consistent effort. As I said, I had to invest in workshops, meetings, and hands-on support that helped teams gradually adopt the new standards.`
           }
         ]
       }
@@ -323,7 +323,7 @@ export default {
             customWidth: "custom-width",
             title: "Ongoing evolution",
             text:
-              `<span class="bold">The new Design System delivered clear value</span>. With the foundations firmly in place, our focus shifted toward long-term maintenance and thoughtful expansion. We prioritized:
+              `<span class="bold">The new design system delivered clear value</span>. With the foundations firmly in place, our focus shifted toward long-term maintenance and thoughtful expansion.
               <br /><br />`,
             textAfterList: `By keeping an <span class="bold">open feedback loop</span> through retrospectives, monthly syncs, and Slack channels, we ensured the system stayed relevant and evolved with product needs.`
           }
@@ -338,9 +338,9 @@ export default {
           {
             customWidth: "custom-width",
             text:
-              `Building the Design System was as much about people as it was about components. <span class="bold">Evangelizing internally, managing expectations, and iterating based on real feedback</span> were essential to making it work.
+              `Building the design system was as much about people as it was about components. <span class="bold">Evangelizing internally, managing expectations, and iterating based on real feedback</span> were essential to making it work.
               <br /><br />
-              Some of the most valuable lessons came from setbacks—like overengineering early components or underestimating the support needed for adoption. These helped us recalibrate and improve both the system and the process behind it.`
+              Some of the most valuable lessons came from setbacks, like overengineering early components or underestimating the support needed for adoption. These helped us recalibrate and improve both the system and the process behind it.`
           }
         ]
       }
@@ -348,7 +348,7 @@ export default {
     {
       type: "CaseLine",
       data: {
-        text: "A good design system doesn’t just unify—it makes teams feel like they’re building together."
+        text: "A good design system doesn’t just unify; it makes teams feel like they’re building together."
       }
     }
   ]

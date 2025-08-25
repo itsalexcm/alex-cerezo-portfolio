@@ -24,7 +24,7 @@ export default {
         content: [
           {
             label: "My Role",
-            text: "Lead Product Designer — Research, Interaction Design, Visual Design, User Journey, Design System, Prototyping"
+            text: "Lead Product Designer · Research, IA, Interaction Design, Visual Design, User Journey, Design System, Prototyping, User Testing"
           },
           {
             label: "Team",
@@ -57,7 +57,7 @@ export default {
             text:
               `<a href="https://greyfinch.com/" target="_blank" class="link">Greyfinch ↗</a> is a <span class="bold">Practice Management Software (PMS)</span> designed primarily for orthodontic clinics. Its platform enables the management of tasks ranging from patient acquisition to appointment scheduling, billing, and communication.
               <br /><br />
-              At the heart of the platform lies the Calendar—a crucial tool for all three primary user roles: doctors, front-desk, and assistants. It allows users to manage appointments, view daily schedules, and organize doctor chair assignments at a glance.`
+              At the heart of the platform lies the Calendar, a crucial tool for all three primary user roles: doctors, front-desk, and assistants. It allows users to manage appointments, view daily schedules, and organize doctor chair assignments at a glance.`
           }
         ]
       }
@@ -86,13 +86,13 @@ export default {
             text:
               `<span class="bold">A spike in support tickets</span> related to the calendar revealed flaws in the scheduling flow. Improving speed, clarity, and reliability became essential to boost staff performance.
               <br /><br />
-              The original scheduling flow relied on <span class="bold">two separate panels</span>—one for patient info, another for appointment settings—making the process fragmented, and hard to follow for staff.`
+              The original scheduling flow relied on <span class="bold">two separate panels</span> (one for patient info, another for appointment settings), making the process fragmented, and hard to follow for staff.`
           },
           {
             title: "The solution",
             text: `In under 6 months, we redesigned the experience to fix major usability issues and make daily workflows smoother for clinics staff.
             <br /><br />
-            <span class="bold">I led the effort from discovery to delivery</span>—aligning with stakeholders, running research sessions, shaping design directions, and validating improvements with real users.`
+            <span class="bold">I led the effort from discovery to delivery</span>, aligning with stakeholders, running research sessions, shaping design directions, and validating improvements with real users.`
           }
         ]
       }
@@ -187,7 +187,7 @@ export default {
             listType: "ol",
             start: 3,
             list: [
-              `I added a dedicated section for <span class="bold">appointment notes</span>, giving staff a simple, consistent way to capture important context.`
+              `I added a dedicated section for <span class="bold">appointment notes</span>, giving staff a simple, consistent way to capture important context. This was one of the most requested features.`
             ]
           }
         ]
@@ -248,7 +248,7 @@ export default {
           {
             customWidth: "custom-width",
             title: "Focusing on what matters",
-            text: `I captured all findings in a shared spreadsheet, organized by product areas—especially the Schedule. <span class="bold">I also mapped the scheduling journey</span> to pinpoint delays and friction.
+            text: `I captured all findings in a shared spreadsheet, organized by product areas, especially the Schedule. <span class="bold">I also mapped the scheduling journey</span> to pinpoint delays and friction.
             <br /><br />
             Then, we used effort–value analysis to help us <span class="bold">prioritize quick wins and high-impact fixes</span> aligned with both user needs and business goals.
             <br /><br />`

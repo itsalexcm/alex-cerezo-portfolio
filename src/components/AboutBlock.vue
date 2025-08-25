@@ -6,12 +6,12 @@
     <div class="about-alex">
       <div class="about-content">
         <p class="about-title">
-          Design technologist specialized in systems that help people. User focus. Problem-solver. Advocate of exceptional design.
+          A world of possibilities
         </p>
         <p class="text regular">
           Great design happens where user needs and business goals align. With 10+ years of experience, I’ve partnered with researchers, designers, and developers to craft products used by millions.
           <br /><br />
-          I’m passionate about solving complex problems with creativity and empathy—from enhancing user experiences to exploring emerging technologies. I strive to create environments where people feel valued and can grow together.
+          I’m passionate about solving complex problems with creativity and empathy, from enhancing user experiences to exploring emerging technologies. I strive to create environments where people feel valued and can grow together.
           <br /><br />
           Outside work I enjoy chasing a flying disc in Ultimate Frisbee tournaments, staying active through sports and outdoor activities, and traveling as much as I can.
         </p>
