@@ -211,10 +211,6 @@
   .hamburger .bar:nth-child(1) { top: 13px; }
   .hamburger .bar:nth-child(2) { top: 19px; }
   .hamburger .bar:nth-child(3) { top: 25px; }
-  /* Optional: animate to X when open */
-  .hamburger[aria-expanded="true"] .bar:nth-child(1) { transform: translateY(6px) rotate(45deg); }
-  .hamburger[aria-expanded="true"] .bar:nth-child(2) { opacity: 0; }
-  .hamburger[aria-expanded="true"] .bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
 
   /* Mobile overlay */
   .mobile-menu-backdrop {
@@ -264,7 +260,6 @@
       gap: var(--spacing-2x);
     }
     header .header-container menu .menu-desktop { display: none; }
-    // header .header-container menu .menu-toggle { display: none; }
     header .header-container menu .hamburger { display: inline-block; }
   }
 </style>
