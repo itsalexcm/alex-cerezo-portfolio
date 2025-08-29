@@ -248,7 +248,7 @@
     text-decoration: none;
   }
 
-  .mobile-menu .router-link-active {
+  .mobile-menu a.selected, .mobile-menu .router-link-active {
     border-bottom-color: var(--text-primary);
   }
 
