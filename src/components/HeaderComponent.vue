@@ -8,43 +8,108 @@
         </router-link>
       </div>
       <menu>
-        <ul>
-          <li>
-            <router-link
-              to="/"
-              class="text regular menu-link"
-              :class="{ selected: route.path === '/' || route.path.startsWith('/work/') }"
-            >
-              Work
-            </router-link>
-          </li>
-          <li>
-            <router-link
-              to="/about"
-              class="text regular menu-link"
-              :class="{ selected: route.path === '/about' }"
-            >
-              About
-            </router-link>
-          </li>
-          <li>
-            <a class="text regular menu-link" rel="noopener noreferrer" href="https://www.dropbox.com/scl/fi/92dixxdwy7igoi8fubsg8/AlexCerezo_Resume.pdf?rlkey=5iis35hitt713el2w8tw1m3rf&dl=0" target="_blank">Resume ↗</a>
-          </li>
-        </ul>
+        <div class="menu-desktop">
+          <ul>
+            <li>
+              <router-link
+                to="/"
+                class="text regular menu-link"
+                :class="{ selected: route.path === '/' || route.path.startsWith('/work/') }"
+              >
+                Work
+              </router-link>
+            </li>
+            <li>
+              <router-link
+                to="/about"
+                class="text regular menu-link"
+                :class="{ selected: route.path === '/about' }"
+              >
+                About
+              </router-link>
+            </li>
+            <li>
+              <a class="text regular menu-link" rel="noopener noreferrer" href="https://www.dropbox.com/scl/fi/92dixxdwy7igoi8fubsg8/AlexCerezo_Resume.pdf?rlkey=5iis35hitt713el2w8tw1m3rf&raw=1" target="_blank">Resume ↗</a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          class="hamburger"
+          type="button"
+          @click="toggleMenu"
+          :aria-expanded="isMenuOpen.toString()"
+          aria-controls="mobileMenu"
+          aria-label="Open menu"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
         <div class="menu-toggle">
           <ThemeToggle />
         </div>
       </menu>
+      <Transition name="fade">
+        <div
+          v-if="isMenuOpen"
+          id="mobileMenuBackdrop"
+          class="mobile-menu-backdrop"
+          @click.self="closeMenu"
+        >
+          <nav id="mobileMenu" class="mobile-menu" role="menu">
+            <ul>
+              <li role="menuitem">
+                <router-link
+                  to="/"
+                  class="text regular menu-link"
+                  :class="{ selected: route.path === '/' || route.path.startsWith('/work/') }"
+                  @click="closeMenu"
+                >Work</router-link>
+              </li>
+              <li role="menuitem">
+                <router-link
+                  to="/about"
+                  class="text regular menu-link"
+                  :class="{ selected: route.path === '/about' }"
+                  @click="closeMenu"
+                >About</router-link>
+              </li>
+              <li role="menuitem">
+                <a
+                  class="text regular menu-link"
+                  href="https://www.dropbox.com/scl/fi/92dixxdwy7igoi8fubsg8/AlexCerezo_Resume.pdf?rlkey=5iis35hitt713el2w8tw1m3rf&raw=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  @click="closeMenu"
+                >Resume ↗</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </Transition>
     </div>
   </header>
 </template>
 
 <script setup>
+  import { ref, watch, onMounted, onBeforeUnmount } from 'vue';
   import { useRoute } from 'vue-router';
   import LogoComponent from '@/components/LogoComponent.vue';
   import ThemeToggle from '@/components/ThemeToggle.vue';
 
   const route = useRoute();
+
+  const isMenuOpen = ref(false);
+  const toggleMenu = () => { isMenuOpen.value = !isMenuOpen.value; };
+  const closeMenu = () => { isMenuOpen.value = false; };
+
+  watch(() => route.fullPath, () => closeMenu());
+
+  const onKeydown = (e) => { if (e.key === 'Escape') closeMenu(); };
+  onMounted(() => { window.addEventListener('keydown', onKeydown); });
+  onBeforeUnmount(() => { window.removeEventListener('keydown', onKeydown); });
 </script>
 
 <style lang="scss">
@@ -111,12 +176,95 @@
       }
     }
   }
+
+  /* Fade transition matching site style */
+  .fade-enter-active, .fade-leave-active { transition: opacity .25s ease; }
+  .fade-enter-from, .fade-leave-to { opacity: 0; }
+
+  /* Animation extras for sheet from bottom */
+  .fade-enter-from .mobile-menu ul { transform: translateY(8px) scale(.98); opacity: 0; }
+  .fade-enter-active .mobile-menu ul { transition: transform .25s ease, opacity .25s ease; }
+  .fade-leave-to .mobile-menu ul { transform: translateY(8px) scale(.98); opacity: 0; }
+
+  /* Hamburger (hidden on desktop) */
+  .hamburger {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    padding: 0;
+    background-color: var(--bg-secondary);
+    transition: background-color 0.3s ease;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .hamburger .bar {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    height: 2px;
+    background: var(--text-primary);
+    border-radius: 2px;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+  .hamburger .bar:nth-child(1) { top: 13px; }
+  .hamburger .bar:nth-child(2) { top: 19px; }
+  .hamburger .bar:nth-child(3) { top: 25px; }
+  /* Optional: animate to X when open */
+  .hamburger[aria-expanded="true"] .bar:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  .hamburger[aria-expanded="true"] .bar:nth-child(2) { opacity: 0; }
+  .hamburger[aria-expanded="true"] .bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+  /* Mobile overlay */
+  .mobile-menu-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0);
+    backdrop-filter: blur(4px);
+    z-index: 10000;
+    display: grid;
+    place-items: end center;
+    padding-bottom: max(24px, env(safe-area-inset-bottom));
+  }
+  .mobile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: var(--spacing-8x) var(--spacing-10x);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-5x);
+    align-items: center;
+    background: color-mix(in oklab, var(--bg-primary) 85%, transparent);
+    border: 1px solid var(--bg-secondary);
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+  }
+
+  .mobile-menu a, .mobile-menu {
+    border-bottom: 1px solid transparent;
+    padding-bottom: var(--spacing-1x);
+  }
+
+  .mobile-menu a, .mobile-menu .router-link-active {
+    font: inherit;
+    color: var(--text-primary);
+    text-decoration: none;
+  }
+
+  .mobile-menu .router-link-active {
+    border-bottom-color: var(--text-primary);
+  }
+
+  /* Desktop vs mobile visibility */
+  .menu-desktop { display: flex; }
+
   @media (max-width: 720px) {
-    .alex {
-      h1 {
-        font-size: var(--font-size-lg);
-        line-height: var(--line-height-md);
-      }
+    header .header-container menu {
+      gap: var(--spacing-2x);
     }
+    header .header-container menu .menu-desktop { display: none; }
+    // header .header-container menu .menu-toggle { display: none; }
+    header .header-container menu .hamburger { display: inline-block; }
   }
 </style>
