@@ -34,15 +34,15 @@ Runs ESLint and automatically fixes simple issues.
 
 ## 📂 Project Structure
 ```
-alex-cerezo-portfolio/
-├── src/            # Main source code
-│   ├── assets/     # Images, fonts, static resources
-│   ├── components/ # Reusable Vue components
-│   ├── views/      # Pages (Home, Profile, Case Studies, etc.)
-│   └── router/     # Vue Router setup
-├── public/         # Static public files
-├── package.json    # Project metadata & scripts
-└── ...
+src/               # Main source code
+│ ├── assets/      # Images, fonts, static resources
+│ ├── components/  # Reusable Vue components
+│ ├── views/       # Pages (Home, Profile, Case Studies, etc.)
+│ ├── router/      # Vue Router setup
+│ └── composables/ # Reusable logic
+public/            # Static files (favicon, index.html, etc.)
+dist/              # Compiled production build
+package.json       # Project metadata & scripts
 ```
 
 ---
@@ -58,7 +58,7 @@ alex-cerezo-portfolio/
 ## 📌 About
 This project is my living portfolio:  
 
-- 🖼 Showcases design case studies
+- 🖼 Showcases design case studies (Greyfinch, Finsit, eDreams, etc.)  
 - ⚙️ Demonstrates technical implementation with Vue, design tokens, and custom components  
 - 🎨 Serves as a playground to test new ideas, animations, and interactions  
 
