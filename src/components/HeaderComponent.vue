@@ -79,7 +79,7 @@
               <li role="menuitem">
                 <a
                   class="text regular menu-link"
-                  href="https://www.dropbox.com/scl/fi/92dixxdwy7igoi8fubsg8/AlexCerezo_Resume.pdf?rlkey=5iis35hitt713el2w8tw1m3rf&raw=1"
+                  href="https://www.dropbox.com/scl/fi/0kk13ctsil7xpftstswy0/AlexCerezo_Resume.pdf?rlkey=hcu988vxsrbncwb09himqwdwp&st=2feyayq7&dl=0"
                   target="_blank"
                   rel="noopener noreferrer"
                   @click="closeMenu"
